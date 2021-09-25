@@ -2,11 +2,157 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+    <meta name="description" content="Большой ассортимент цифровой техники известных брендов в интернет-магазине Device по отличным ценам.
+     Доставка. Гарантия. Кредит.">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <!-- Title -->
+    <title>HTML Academy: Девайс</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <!-- ##### Header Area ##### -->
+    <header class="header-area">
+      <!-- Navbar Area -->
+      <a class="nav-brand" href="index.html"><img src="" alt=""></a>
+      <!-- Search Form -->      
+        <form class="search-form" action="#" method="get">
+          <button class="search-form-button" type="submit"><span class="icon"></span></button>
+          <input class="form-control" type="search" name="search" placeholder="Поиск по сайту">
+        </form>
+      <!-- Navbar  -->
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li><span class="navigation-list-icon"></span><a href="signin.html">Войти</a></li>
+          <li><span class="navigation-list-icon"></span><a href="compare.html">Сравнить</a></li>
+          <li><span class="navigation-list-icon"></span><a href="cart.html">Корзина</a></li>
+        </ul>
+      <!-- Nav Menu -->
+        <ul class="navigation-menu">
+          <li><a href="catalog.html">Каталог товаров</a><span class="navigation-menu-icon"></span></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Content Area ##### -->
+    <main class="main-content">
+      <h1 class="visualy-hidden">Интернет-магазин Device цифровой техники известных брендов</h1>
+    <!-- Slader Aria -->
+    <section class="slider">
+      <h2 clas="visualy-hidden">Популярные товары</h2>
+      
+      <button class="slider-button slider-prev" type="button">
+        <span class="visually-hidden">Предыдущее фото</span>
+      </button>
+      <button clas="slider-button slider-next" type="button">
+        <span class="visually-hidden">Следующее фото</span>
+      </button>
+
+      <ol class="slider-benefits">
+        <li class="slider-benefits-item">
+          <button class="slider-benefits-button slider-benefits-button-current" type="button">
+            <img class="slider-image" src="" alt="Квадракоптер">
+          </button>
+          <span class="slider-number">01</span>
+          <p class="slider-slogan">Порхает как бабочка, жалит как пчела!</p>
+          <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="slider-link" href="#">Подробнее</a>
+          <dl class="slider-table-property">
+            <dt>800 м</dt>
+              <dd>Дальность полета</dd>
+            <dt>50 м</dt>
+              <dd>Радиус поражения</dd>
+          </dl>
+        </li>
+        <li class="slider-benefits-item">
+          <button class="slider-benefits-button slider-benefits-button-current" type="button">
+            <img class="slider-image" src="" alt="Фитнес-браслет">
+          </button>
+          <span class="slider-number">02</span>
+          <p class="slider-slogan">Худеем правильно!</p>
+          <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a class="slider-link" href="#">Подробнее</a>
+          <dl class="slider-table-property">
+            <dt>48 часов</dt>
+              <dd>Без подзарядки</dd>            
+          </dl>
+        </li>
+        <li class="slider-benefits-item">
+          <button class="slider-benefits-button slider-benefits-button-current" type="button">
+            <img class="slider-image" src="" alt="Палка для селфи">
+          </button>
+          <span class="slider-number">03</span>
+          <p class="slider-slogan">Делай селфи, как Бен Стиллер!</p>
+          <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+          <a class="slider-link" href="#">Подробнее</a>
+          <dl class="slider-table-property">
+            <dt>8,5 м</dt>
+              <dd>Длина палки</dd>
+            <dt>5 кг</dt>
+              <dd>Вес палки</dd>
+          </dl>
+          <dt>Карбон</dt>
+            <dd>Материал</dd>
+        </li>
+      </ol>
+
+    </section>
+
+    <!-- Choice Area -->
+    <section class="choice-catalog">
+      <h2 class="visualy-hidden">Каталог товаров</h2>
+      <ul class="choice-catalog-list">
+        <li><a href="virtual.html"><img src=""><h3>Виртуальная реальность</h3></a></li>
+        <li><a href="monopods.html"><img src=""><h3>Моноподы для селфи</h3></a></li>
+        <li><a href="cameras.html"><img src=""><h3>Экшн-камеры</h3></a></li>
+        <li><a href="bracelets.html"><img src=""><h3>Фитнес-браслеты</h3></a></li>
+        <li><a href="watch.html"><img src=""><h3>Умные часы</h3></a></li>
+        <li><a href="quadrocopters.html"><img src=""><h3>Квадрокоптеры</h3></a></li>
+      </ul>
+    </section>
+
+    <!-- Services Area-->
+    <section class="services">
+      <h2 class="visualy-hidden">Сервисные услуги</h2>
+      <ol class="services-list">
+        <li><a class="services-item-active">Доставка</a>
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+             Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <img class="services-item-background" src="">
+        </li>
+        <li><a class="services-item-link">Гарантия</a>
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же.</p>
+          <img class="services-item-background" src="">
+        </li>
+        <li><a class="services-item-link">Кредит</a>
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
+             Выгодные для банка, разумеется.</p>
+          <img class="services-item-background" src="">
+        </li>
+      </ol>    
+
+    <!-- Offer Area -->
+    <aside class="offer">
+      <img class="offer-background" src="">
+      <h2 class="offer-title">Доставим редкий товар под заказ</h2>
+      <button class="offer-button" type="button">Info</button>
+    </aside>
+    </section>
+    </main>
 
   </body>
 </html>
