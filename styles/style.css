@@ -34,7 +34,7 @@
     font-display: swap;
 }
 
-/* == Base CSS == */
+/* == 2.0 Base CSS == */
 
 body {
     font-family: "Rubik", sans-serif;
@@ -46,18 +46,41 @@ body {
     color: #444444;
 }
 
-/* == Header Area == */
+/* == 2.1 Header Area == */
 
 .header-area {
     color:  #000000;
     background-color: #FFE17F;
 }
 
+/* == 2.1.1 Navigation == */
+
+.navigation-list-link {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* == 2.1.2 Naviation menu == */
+
 .navigation-menu-link {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     /* line-height: 21px; */
     letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.navigation-menu-catalog-link {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
