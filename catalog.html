@@ -13,7 +13,7 @@
   <link rel="icon" href="">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -21,7 +21,7 @@
   <!-- ##### Header Area ##### -->
   <header class="header-area">
     <!-- Navbar Area -->
-    <a class="nav-brand" href="index.html"><img class="nav-brand-logo" src=""
+    <a class="nav-brand" href="index.html"><img class="nav-brand-logo" src="img/header_logo.svg" width="145" height="36"
         alt="Логотип интернет-магазина Девайс"></a>
     <!-- Search Form -->
     <form class="search-form" action="#" method="get">
@@ -81,7 +81,7 @@
           <a class="breadcrumbs-link" href="catalog.html">Каталог товаров &gt;</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link breadcrumbs-link-current">Моноподы для селфи</a>
+          <a class="breadcrumbs-link breadcrumbs-link-current" href="monopods.html">Моноподы для селфи</a>
         </li>
       </ul>
     </header>
@@ -162,7 +162,7 @@
           </ul>
         </fieldset>
 
-        <button class="button" type="submit">Показать</button>
+        <button class="catalog-filter-button" type="submit">Показать</button>
       </form>
       <!-- ## Sorting Area ## -->
       <h2 class="catalog-products-title">сортировка:</h2>
@@ -184,30 +184,34 @@
       <!-- ## Products Area ## -->
       <ul class="product-list">
         <li class="product-card">
+          <img class="product-card-image product-current" src="img/catalog/product-1.jpg" width="360" height="380"
+            alt="Любительская селфи-палка">
+          <a class="button-product-current" href="product.html?id=">Подробнее</a>
           <a class="product-card-link" href="product.html?id=">
-            <img class="product-card-image product-current" src="" alt=" ">
-            <span class="button-product-current">Подробнее</span>
             <h3 class="product-card-title">Любительская селфи-палка</h3>
           </a>
           <b class="product-card-price">500 ₽</b>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="product.html?id=">
-            <img class="product-card-image" src="" alt=" ">
+            <img class="product-card-image" src="img/catalog/product-2.jpg" width="360" height="380"
+              alt="Профессиональная селфи-палка">
             <h3 class="product-card-title">Профессиональная селфи-палка</h3>
           </a>
           <b class="product-card-price">1 500 ₽</b>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="product.html?id=">
-            <img class="product-card-image" src="" alt=" ">
+            <img class="product-card-image" src="img/catalog/product-3.jpg" width="360" height="380"
+              alt="Непотопляемая селфи-палка">
             <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
           </a>
           <b class="product-card-price">2 500 ₽</b>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="product.html?id=">
-            <img class="product-card-image" src="" alt=" ">
+            <img class="product-card-image" src="img/catalog/product-4.jpg" width="360" height="380"
+              alt="Селфи-палка «Следуй за мной»">
             <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
           </a>
           <b class="product-card-price">4 900 ₽</b>
@@ -251,13 +255,13 @@
   <footer class="footer-area">
     <!-- Footer contacts -->
     <section class="footer-contacts">
-      <a class="footer-brand" href="index.html"><img class="footer-brand-logo" src=""
-          alt="Логотип интернет-магазина Девайс"></a>
+      <a class="footer-brand" href="index.html"><img class="footer-brand-logo" src="img/footer_logo.svg" width="145"
+          height="36" alt="Логотип интернет-магазина Девайс"></a>
       <h2 class="visualy-hedden">Контакты</h2>
       <address class="footer-address">
         <p class="footer-address-title">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </address>
-      <img class="footer-contacts-image" src="">
+      <img class="footer-contacts-image" src="img/yellow_line.svg" width="80" height="7">
     </section>
     <!-- Footer services -->
     <section class="foter-services">
@@ -281,13 +285,16 @@
       <!-- Footer Social Info -->
       <ul class="footer-social">
         <li class="footer-social-list">
-          <a class="footer-social-button" href="https://www.facebook.com/"><img src="" alt="Фэйсбук"></a>
+          <a class="footer-social-button" href="https://www.facebook.com/">
+            <img src="img/facebook_btn.svg" width="9" height="18" alt="Фэйсбук" alt="Фэйсбук"></a>
         </li>
         <li class="footer-social-list">
-          <a class="footer-social-button" href="https://www.instagram.com/"><img src="" alt="Инстаграм"></a>
+          <a class="footer-social-button" href="https://www.instagram.com/">
+            <img src="img/instagram_btn.svg" width="16" height="16" alt="Инстаграм"></a>
         </li>
         <li class="footer-social-list">
-          <a class="footer-social-button" href="https://twitter.com/"><img src="" alt="Твиттер"></a>
+          <a class="footer-social-button" href="https://twitter.com/">
+            <img src="img/twitter_btn.svg" width="15" height="14" alt="Твиттер"></a>
         </li>
       </ul>
     </section>
@@ -295,7 +302,9 @@
     <section class="phone">
       <h2 class="visualy-hidden">Телефон для связи</h2>
       <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+      <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <img src="img/academy.svg" width="115" height="33" alt="Ссылка на html academy"></a>
+      </p>
     </section>
     <!-- #### Footer Area End #### -->
   </footer>

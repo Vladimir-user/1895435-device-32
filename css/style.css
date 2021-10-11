@@ -135,7 +135,7 @@ body {
 
 /* == 3.1.5 Services Area ==*/
 
-.services-menu-link, .about-link, .contacts-link {
+.services-menu-link, .about-link, .contacts-link, .button-product-current, .catalog-filter-button {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-size: 18px;
@@ -144,7 +144,7 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
-    color: #000000; 
+    color: #000000;
 }
 
 .services-list-title {
@@ -153,7 +153,7 @@ body {
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
-    color: #000000; 
+    color: #000000;
 }
 
 /* == 3.1.6 Offer Area == */
@@ -200,7 +200,7 @@ body {
 
 .contacts-address-title, .contacts-address-phone {
     font-style: normal;
-    color: #444444; 
+    color: #444444;
 }
 
 /* == 3.1.8 Appointment Area == */
@@ -213,7 +213,7 @@ body {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #000000; 
+    color: #000000;
 }
 
 /* == 4.0 Footer Area == */
@@ -254,4 +254,16 @@ body {
     line-height: 19px;
     text-decoration: none;
     color: #ffffff;
+}
+
+/* == 5.0 Catalog page == */
+
+.breadcrumbs-link {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #000000;
 }
