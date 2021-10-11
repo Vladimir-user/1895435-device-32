@@ -118,6 +118,15 @@ body {
     color: #000000;
 }
 
+.slider-number {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 180px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
 /* == 3.1.4 Choice Aria == */
 
 .choice-catalog h3 {
@@ -258,6 +267,17 @@ body {
 
 /* == 5.0 Catalog page == */
 
+.catalog-products-title, .button-upload {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
 .breadcrumbs-link {
   font-family: Rubik, sans-serif;
   font-style: normal;
@@ -266,4 +286,46 @@ body {
   line-height: 19px;
   text-decoration: none;
   color: #000000;
+}
+
+.product-card-title {
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-price {
+    font-weight: 400;
+    line-height: 21px;
+    color: #444444;
+}
+
+.pagination-link {
+    font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #444444;
+}
+
+.pagination-link-prev, .pagination-link-next {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
 }
