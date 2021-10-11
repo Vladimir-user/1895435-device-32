@@ -23,14 +23,16 @@
     <!-- Navbar Area -->
     <a class="nav-brand" href="index.html"><img class="nav-brand-logo" src="img/header_logo.svg" width="145" height="36"
         alt="Логотип интернет-магазина Девайс"></a>
-    <!-- Search Form -->
-    <form class="search-form" action="#" method="get">
-      <button class="search-form-button" type="submit"><span class="icon">Поиск</span></button>
-      <input class="form-control" type="search" name="search" placeholder="Поиск по сайту">
-    </form>
     <!-- Navbar  -->
     <nav class="navigation">
       <ul class="navigation-list">
+        <li class="navigation-list-item">
+    <!-- Search Form -->
+          <form class="search-form" action="#" method="get">
+            <img class="search-form-button" src="img/search_img.svg" width="16" height="16">
+            <input class="form-control" type="search" name="search" placeholder="Поиск по сайту">
+            </form>
+        </li>
         <li class="navigation-list-item">
           <a class="navigation-list-link" href="signin.html">
             <img class="navigation-list-icon" src="img/enter_img.svg" width="13" height="12"> Войти</a>
@@ -49,7 +51,6 @@
         <li class="navigation-menu-item">
           <a class="navigation-menu-link" href="#">
             Каталог товаров <img class="navigation-menu-icon" src="img/catalog_btn.svg" width="50" height="50"></a>
-          <!-- <button class="navigation-menu-button" type="button">+</button> -->
           <ul class="navigation-menu-catalog visualy-hidden">
             <li><a class="navigation-menu-catalog-link" href="virtual.html">Виртуальная реальность</a></li>
             <li><a class="navigation-menu-catalog-link" href="monopods.html">Моноподы для селфи</a></li>
@@ -69,26 +70,27 @@
           <a class="navigation-menu-link" href="contacts.html">Контакты</a>
         </li>
       </ul>
+      <span class="slider-number">01</span>
     </nav>
   </header>
   <!-- ##### Header Area End ##### -->
 
   <!-- ##### Content Area ##### -->
   <main class="main-content">
-    <h1 class="visualy-hidden" hidden>Интернет-магазин Device цифровой техники известных брендов</h1>
-    
+    <h1 class="visualy-hidden">Интернет-магазин Device цифровой техники известных брендов</h1>
+
     <!-- Slader Aria -->
     <section class="slider">
-      <h2 class="visualy-hidden" hidden>Популярные товары</h2>
+      <h2 class="visualy-hidden">Популярные товары</h2>
 
       <img class="img-slider-next" src="img/left-tall-arrow.svg" width="20" height="60">
       <img class="img-slider-next" src="img/right-tall-arrow.svg" width="20" height="60">
 
-      <ol class="slider-pagination visualy-active">
-        <li class="slider-pagination-item">
+      <ol class="slider-pagination">
+        <li class="slider-pagination-item  visualy-active">
           <img class="slider-pagination-button slider-pagination-button-current" src="img/quadrocopter.jpg" width="560"
             height="560">
-          <span class="slider-number">01</span>
+          
           <p class="slider-slogan">Порхает как бабочка, жалит как пчела!</p>
           <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
             под стандартную камеру.</p>
