@@ -37,82 +37,90 @@
 /* == 2.0 Base CSS == */
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 30px;
-    background-color: #ffffff;
-    color: #444444;
-}
-
-.main-content {
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #ffffff;
+  color: #444444;
 }
 
 /* == 3.0 Header Area == */
 
 .header-area {
-    color:  #000000;
-    background-color: #FFE17F;
+  width: 1160px;
+  margin-top: 40px;
+  margin: 0 auto;
+  color:  #000000;
+  background-color: #FFE17F;
+}
+
+.nav-brand {
+  margin-left: 60px;
 }
 
 /* == 3.1.1 Navigation == */
 
 .navigation {
-    width: 1160px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .navigation-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline: 2px solid #000000;
 }
 
 .navigation-menu {
-    display: flex;
-    margin: 0;
-    padding: 0;
-
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline: 2px solid #000000;
 }
 
 .navigation-menu-catalog {
-    display: flex;
-    margin: 0;
-    padding: 0;
-
-    outline: 2px solid rgba(59, 52, 51, 0.5);
-  outline-offset: -5px;
+  display: flex;
+  width:690px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline: 2px solid #000000;
 }
 
 .navigation-list-link {
-    font-family: "Rubik", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
 
@@ -120,215 +128,299 @@ body {
 /* == 3.1.2 Naviation menu == */
 
 .navigation-menu-link {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
 .navigation-menu-catalog-link {
-    font-family: "Rubik", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
 /* == 3.1.3 Slider == */
 
+.main-content {
+  flex-grow: 1;
+}
+
+.slider {
+  display: flex;
+  width: 1160px;
+  flex-direction: row;
+  margin: 0 auto;
+
+  outline: 2px solid #000000;
+}
+
 .slider-slogan {
-    font-family: Raleway, sans-serif;
-    font-size: 50px;
-    font-weight: 800;
-    color: #000000;
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: #000000;
 }
 
 .slider-link {
-    font-family: Raleway, sans-serif;
-    font-size: 18x;
-    font-weight: 800;
-    letter-spacing: 0.2em;
-    color: #000000;
-    text-transform: uppercase;
-    text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 18x;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .slider-property-term {
-    font-family: "Rubik", sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #000000;
 }
 
 .slider-property-description {
-    font-family: "Rubik", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
 }
 
 .slider-number {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 180px;
-    line-height: 30px;
-    color: #ffffff;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 180px;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 /* == 3.1.4 Choice Aria == */
 
+.choice-catalog {
+  width: 1160px;
+  margin: 0 auto;
+
+  outline: 2px solid #000000;
+}
+
+.choice-catalog-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choice-catalog-item {
+  width: 160px;
+}
+
 .choice-catalog h3 {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 24px;
-    text-decoration: none;
-    color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .choice-catalog a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* == 3.1.5 Services Area ==*/
 
+.services {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+
+  outline: 2px solid #000000;
+}
+
+.services-menu {
+  width: 280px;
+}
+
+.services-list-item {
+
+}
+
 .services-menu-link, .about-link, .contacts-link, .button-product-current, .catalog-filter-button {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
 .services-list-title {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 50px;
-    color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
 }
 
 /* == 3.1.6 Offer Area == */
 
+.offer {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+
+  outline: 2px solid #000000;
+}
+
 .offer-title {
-    font-family: Raleway, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #000000;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 /* == 3.1.7 About, Contacts Area ==*/
 
+.infoblock {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+
+  outline: 2px solid #000000;
+}
+
+.about {
+  width: 580px;
+
+  outline: 2px solid #000000;
+}
+
+.contacts {
+  width: 580px;
+
+  outline: 2px solid #000000;
+}
+
 .about-tilte, .contacts-tilte, .appointment-title {
-    font-family: Raleway, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 50px;
-    color: #000000;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
 }
 
 .about-item {
-    font-family: Rubik, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 20px;
-    color: #000000;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
 }
 
 .contacts-subtitle {
-    font-family: Rubik, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 30px;
-    color: #444444;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  color: #444444;
 }
 
 .contacts-address-title, .contacts-address-phone {
-    font-style: normal;
-    color: #444444;
+  font-style: normal;
+  color: #444444;
 }
 
 /* == 3.1.8 Appointment Area == */
 
+.appointment {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .appointment-form-button {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 /* == 4.0 Footer Area == */
 
 .footer-area {
-    background-color: #444444;
-    color: #ffffff;
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #444444;
+  color: #ffffff;
 }
 
 .footer-address-title {
-    font-family: Rubik, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .futer-services-item H2 {
-    font-family: Raleway, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .futer-services-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .phone-link {
-    font-family: Rubik, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration: none;
-    color: #ffffff;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* == 5.0 Catalog page == */
 
 .catalog-products-title, .button-upload {
-    font-family: Raleway, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #000000;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .breadcrumbs-link {
@@ -342,27 +434,27 @@ body {
 }
 
 .product-card-title {
-    font-family: Rubik, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    color: #000000;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000000;
 }
 
 .product-card-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .product-card-price {
-    font-weight: 400;
-    line-height: 21px;
-    color: #444444;
+  font-weight: 400;
+  line-height: 21px;
+  color: #444444;
 }
 
 .pagination-link {
-    font-family: Rubik, sans-serif;
+  font-family: Rubik, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -372,13 +464,13 @@ body {
 }
 
 .pagination-link-prev, .pagination-link-next {
-    font-family: Raleway, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000000;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
