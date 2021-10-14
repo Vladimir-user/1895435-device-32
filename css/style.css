@@ -89,6 +89,7 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -97,49 +98,51 @@ body {
 
 .search-form {
   width: 290px;
-  margin-left: 60px;
-  margin-right: 230px;
+  margin-left: 50px;
+  margin-right: 240px;
+  padding: 10px;
 }
 
 .navigation-list-item:nth-child(2) {
-  margin-right: 172px;
+  margin-right: 150px;
 }
 
 .navigation-list-item:nth-child(3) {
-  margin-left: 10px;
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 .navigation-list-item:nth-child(4) {
-  margin-left: 29px;
+  margin-left: 19px;
 }
 
 .navigation-menu {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  outline: 2px solid #000000;
 }
 
 .navigation-menu-item:nth-child(1) {
+  width: 240px;
   margin-left: 60px;
 }
 
 .navigation-menu-item:nth-child(2) {
+  width: 50px;
   margin-left: 7px;
-  margin-right: 213px;
+  margin-right: 250px;
 }
 
 .navigation-menu-item:nth-child(3) {
   width: 140px;
-  margin-right: 19px;
+  margin-right: 10px;
 }
 
 .navigation-menu-item:nth-child(4) {
   width: 140px;
-  margin-right: 62px;
+  margin-right: 82px;
 }
 
 .navigation-menu-catalog {
@@ -148,7 +151,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  outline: 2px solid #000000;
+  /*outline: 2px solid #000000;*/
 }
 
 .navigation-list-link {
@@ -158,6 +161,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  display: block;
+  padding: 10px;
 }
 
 
@@ -236,6 +241,7 @@ body {
   font-size: 180px;
   line-height: 30px;
   color: #ffffff;
+
 }
 
 /* == 3.1.4 Choice Aria == */
