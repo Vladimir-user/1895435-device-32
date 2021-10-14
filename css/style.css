@@ -65,6 +65,10 @@ body {
   color: #444444;
 }
 
+.main-content {
+  flex-grow: 1;
+}
+
 /* == 3.0 Header Area == */
 
 .header-area {
@@ -74,8 +78,13 @@ body {
   background-color: #FFE17F;
 }
 
-.nav-brand {
-  margin-left: 60px;
+.top-white {
+  display: block;
+  height: 40px;
+  background-color: #ffffff;
+}
+.nav-brand-logo {
+  margin: 0 0 -35px 60px;
 }
 
 /* == 3.1.1 Navigation == */
@@ -91,20 +100,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0;
+  margin: 40px 0 0 0;
   padding: 0;
   list-style-type: none;
   }
 
 .search-form {
-  width: 290px;
+  width: 460px;
   margin-left: 50px;
-  margin-right: 240px;
+  margin-right: 60px;
   padding: 10px;
 }
 
 .navigation-list-item:nth-child(2) {
-  margin-right: 150px;
+  margin-right: 187px;
 }
 
 .navigation-list-item:nth-child(3) {
@@ -115,59 +124,41 @@ body {
   margin-left: 19px;
 }
 
-.navigation-menu {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.navigation-menu-item:nth-child(1) {
-  width: 240px;
-  margin-left: 60px;
-}
-
-.navigation-menu-item:nth-child(2) {
-  width: 50px;
-  margin-left: 7px;
-  margin-right: 250px;
-}
-
-.navigation-menu-item:nth-child(3) {
-  width: 140px;
-  margin-right: 10px;
-}
-
-.navigation-menu-item:nth-child(4) {
-  width: 140px;
-  margin-right: 82px;
-}
-
-.navigation-menu-catalog {
-  display: flex;
-  width:690px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  /*outline: 2px solid #000000;*/
-}
-
 .navigation-list-link {
-  font-family: "Rubik", sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
   text-decoration: none;
   color: #000000;
   display: block;
   padding: 10px;
 }
 
-
-
 /* == 3.1.2 Naviation menu == */
+
+.navigation-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-menu-item:nth-child(1) {
+  margin-left: 50px;
+}
+
+.navigation-menu-item:nth-child(2) {
+  margin-left: 7px;
+  margin-right: 190px;
+}
+
+.navigation-menu-item:nth-child(3) {
+  margin-right: 15px;
+}
+
+.navigation-menu-item:nth-child(4) {
+  margin-right: 15px;
+}
 
 .navigation-menu-link {
   font-family: "Raleway", sans-serif;
@@ -176,22 +167,41 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  display: block;
+  padding: 10px;
+}
+
+/* == 3.1.3 Naviation menu-catalog == */
+
+.navigation-menu-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 0 0 50px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-menu-catalog-item {
+  width: 220px;
 }
 
 .navigation-menu-catalog-link {
-  font-family: "Rubik", sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 18px;
-  text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  padding: 10px;
 }
 
 /* == 3.1.3 Slider == */
 
-.main-content {
-  flex-grow: 1;
+.slider-number {
+  margin: 50px 50px 50px 875px;
+  font-weight: 800;
+  font-size: 180px;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 .slider {
@@ -232,16 +242,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #000000;
-}
-
-.slider-number {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 180px;
-  line-height: 30px;
-  color: #ffffff;
-
 }
 
 /* == 3.1.4 Choice Aria == */
