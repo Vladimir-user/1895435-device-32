@@ -98,7 +98,7 @@ body {
 
 .navigation-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   margin: 40px 0 0 0;
   padding: 0;
@@ -136,7 +136,7 @@ body {
 
 .navigation-menu {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   margin: 10px 0 50px 0;
   padding: 0;
@@ -526,7 +526,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0 0 56px 0;
-  
+
 }
 
 .contacts-link {
@@ -870,8 +870,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
-  outline: 1px solid green;
 }
 
 .product-card {
