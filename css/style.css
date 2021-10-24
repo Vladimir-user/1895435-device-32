@@ -74,6 +74,7 @@ body {
 .header-area {
   width: 1160px;
   margin: 0 auto;
+  padding: 0;
   color:  #000000;
   background-color: #FFE17F;
 }
@@ -96,32 +97,37 @@ body {
   margin: 0 auto;
 }
 
-.navigation-list {
+.navigation-list-container {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
+  align-items: flex-start;
   margin: 40px 0 0 0;
   padding: 0;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-  }
+  flex-basis: 510px;
+}
 
 .search-form {
-  width: 460px;
+  display: flex;
+  width: 440px;
   margin-left: 50px;
   margin-right: 60px;
   padding: 10px;
 }
 
 .navigation-list-item:nth-child(1) {
-  width: 570px;
+  margin-right: auto;
 }
 
 .navigation-list-item:nth-child(2) {
-  margin-right: 187px;
-}
-
-.navigation-list-item:nth-child(3) {
-  margin-right: 50px;
+  margin-right: 15px;
 }
 
 .navigation-list-link {
@@ -134,23 +140,36 @@ body {
 
 /* == 3.1.2 Naviation menu == */
 
-.navigation-menu {
+.navigation-menu-container {
   display: flex;
-  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin: 10px 0 40px 0;
+  padding: 0;
+}
+
+.navigation-menu-products {
+  display: flex;
+  flex-basis: 520px;
+  padding: 0;
+  margin: 0 0 0 50px;
+}
+
+.navigation-menu-list {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 10px 0 50px 0;
+  margin: 0;
   padding: 0;
   list-style-type: none;
+  flex-basis: 515px;
 }
 
 .navigation-menu-item:nth-child(1) {
-  display: flex;
-  width: 520px;
-  margin-left: 50px;
+  margin-right: 5px;
 }
 
-.navigation-menu-item:nth-child(3) {
-  margin-right: 50px;
+.navigation-menu-item:nth-child(2) {
+  margin-right: auto;
 }
 
 .navigation-menu-link {
@@ -168,7 +187,7 @@ body {
 
 .navigation-menu-catalog {
   display: flex;
-  flex-wrap: w;
+  flex-wrap: wrap;
   flex-direction: row;
   margin: 0 0 0 50px;
   padding: 0;
@@ -190,7 +209,7 @@ body {
 /* == 3.1.3 Slider == */
 
 .slider-number {
-  margin: 50px 50px 50px 880px;
+  margin: 50px 70px 50px 860px;
   font-weight: 800;
   font-size: 180px;
   line-height: 30px;
@@ -270,18 +289,16 @@ body {
 .choice-catalog {
   width: 1160px;
   margin: 100px auto 0 auto;
-}
-
-.choice-catalog-list {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
-.choice-catalog-item {
-  width: 160px;
+.choice-catalog-list {
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  column-gap: 40px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
 }
 
 .choice-catalog-link-img {
@@ -314,8 +331,9 @@ body {
 /* == 3.1.5 Services Area ==*/
 
 .gray-color {
+  width: 100%;
   display: block;
-  max-height: 288px;
+  min-height: 288px;
   margin: 140px auto 0 auto;
   background-color: #F0F0F0;
 }
@@ -324,15 +342,19 @@ body {
   display: flex;
   width: 1160px;
   margin: 0 auto;
+  padding: 0;
+  height: 100%;
 }
 
 .services-menu {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   margin: -33px 0 0 0;
   padding: 0;
   width: 280px;
+  min-height: 319px;
   list-style-type: none;
 }
 
@@ -358,7 +380,7 @@ body {
 .services-list {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: 435px;
   margin: -33px 0 0 120px;
   padding: 0;
   list-style-type: none;
@@ -375,7 +397,7 @@ body {
 }
 
 .services-list-item-image {
-  margin: -16px 0 0 100px;
+  margin: -16px 0 0 115px;
 }
 
 .about-link, .contacts-link, .button-product-current, .catalog-filter-button {
@@ -394,23 +416,24 @@ body {
 
 .offer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1160px;
+  min-height: 100px;
   margin: 90px auto 0 auto;
 }
 
 .offer-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .offer-list-item:nth-child(1) {
-  display: block;
   text-align: center;
   width: 125px;
-  height: 100px;
   background-color: #FFE17F;
 }
 
@@ -460,7 +483,11 @@ body {
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
   width: 580px;
+  margin: 0;
+  padding: 0;
 }
 
 .about-text {
@@ -468,7 +495,7 @@ body {
 }
 
 .about-list {
-  margin: 100px 0 60px 0;
+  margin: 85px 0 60px 0;
   padding-left: 20px;
   list-style-type: none;
 }
@@ -492,11 +519,15 @@ body {
 
 .about-link {
   padding: 10px;
-  margin: 0 0 0 25px;
+  margin: auto 0 0 25px;
 }
 
 .contacts {
+  display: flex;
+  flex-direction: column;
   width: 580px;
+  margin: 0;
+  padding: 0;
 }
 
 .about-tilte, .contacts-tilte {
@@ -531,33 +562,31 @@ body {
 
 .contacts-link {
   padding: 10px;
-  margin: 0 0 0 25px;
+  margin: auto 0 0 25px;
 }
 
 /* == 3.1.8 Appointment Area == */
 
 .appointment-container {
-  width: 1440px;
+  width: 100%;
   background-color: #F0F0F0;
   margin: 0 auto;
   padding-bottom: 150px;
 }
 
 .appointment {
+  display: flex;
+  flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
 }
 
-.appointment-list {
+.appointment-item {
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
+  flex-direction: column;
+  width: 580px;
   margin: 0;
   padding: 0;
-}
-
-.appointment-item {
-  width: 580px;
 }
 
 .appointment-title {
@@ -567,11 +596,11 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-  margin: 75px 0 0 0;
+  margin: 75px 187px 0 0;
 }
 
 .appointment-text {
-  margin: 85px 0 0 0;
+  margin: 85px 0 0 10px;
 }
 
 .appointment-form {
@@ -606,7 +635,7 @@ body {
 /* == 4.0 Footer Area == */
 
 .footer-container {
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: #444444;
@@ -650,7 +679,8 @@ body {
   justify-content: center;
   list-style-type: none;
   margin: 120px 0 0 0;
-  padding: 0;}
+  padding: 0;
+}
 
 .futer-services-item {
   display: flex;
@@ -722,10 +752,7 @@ body {
 /* == 5.0 Catalog page == */
 
 .main-inner {
-  width: 1440px;
   flex-grow: 1;
-  margin: 0 auto;
-  padding: 0;
 }
 
 /* == 5.1 Inner header Area ==*/
@@ -745,13 +772,13 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-  margin: 37px 0 0 60px;
+  margin: 37px 0 0 57px;
 }
 
 .breadcrumbs-list {
   display: flex;
   justify-content: flex-start;
-  margin: 30px 0 50px 60px;
+  margin: 30px 0 50px 55px;
   padding: 0;
   list-style-type: none;
 }
@@ -775,7 +802,7 @@ body {
 .catalog-products-container {
   display: flex;
   flex-direction: row;
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
@@ -786,8 +813,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 468px;
+  flex-basis: 380px;
   background-color: #E5E5E5;
+  flex-grow: 1;
 }
 
 .catalog-filter {
@@ -796,9 +824,9 @@ body {
 
 .catalog-products-title {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
-  width: 468px;
+  width: 100%;
   height: 70px;
   background-color: #DCDCDC;
   margin: 0;
@@ -815,22 +843,25 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  margin: 0 0 0 206px;
+  margin-right: 190px;
 }
 
 /* == 5.3 Sorting Area == */
 
 .catalog-products {
   display: flex;
+  flex-basis: 830px;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .sorting-container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   background-color: #EBEBEB;
-  width: 832px;
+  width: 100%;
   height: 70px;
   margin: 0;
   padding: 0;
@@ -845,12 +876,13 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  margin: 0 0 0 110px;
+  margin: 0 0 0 40px;
 }
 
 .sorting-type-form {
-  margin:  0 0 0 70px;
-  flex-grow: 1;
+  width: 200px;
+  margin:  0 310px 0 40px;
+  
 }
 
 .button {
@@ -863,7 +895,7 @@ body {
 
 .product-list {
   display: flex;
-  width: 832px;
+  width: 810px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
@@ -876,12 +908,13 @@ body {
 
 .product-card {
   margin: 69px 0 0 40px;
+  flex-grow: 1;
 }
 
 .product-card-list {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 30px 0 0 0;
   padding: 0;
   list-style-type: none;

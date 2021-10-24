@@ -24,7 +24,7 @@
 
    <!-- ##### Header Area ##### -->
 
-  <header class="header-area">
+   <header class="header-area">
 
     <!-- Logo -->
 
@@ -38,14 +38,13 @@
     <!-- Navbar Area -->
 
     <nav class="navigation">
+    <div class="navigation-list-container">
+    <!-- Search Form -->
+    <form class="search-form" action="#" method="get">
+      <img class="search-form-button" src="img/search_img.svg" width="16" height="16" alt="Кнопка Поиск">
+      <input class="form-control" type="search" name="search" placeholder="Поиск по сайту">
+    </form>
       <ul class="navigation-list">
-        <li class="navigation-list-item">
-          <!-- Search Form -->
-          <form class="search-form" action="#" method="get">
-            <img class="search-form-button" src="img/search_img.svg" width="16" height="16" alt="Кнопка Поиск">
-            <input class="form-control" type="search" name="search" placeholder="Поиск по сайту">
-          </form>
-        </li>
         <li class="navigation-list-item">
           <a class="navigation-list-link" href="signin.html">
             <img class="navigation-list-icon" src="img/enter_img.svg" width="13" height="12" alt="Кнопка Войти">
@@ -65,43 +64,46 @@
           </a>
         </li>
       </ul>
+    </div>
 
       <!-- Nav Menu -->
-
-      <ul class="navigation-menu">
-        <li class="navigation-menu-item">
+    <div class="navigation-menu-container">
+      
+        <div class="navigation-menu-products">
           <a class="navigation-menu-link" href="#">Каталог товаров</a>
           <img class="navigation-menu-icon" src="img/catalog_btn.svg" width="50" height="50"
               alt="Кнопка развернуть Каталог">
+        </div>
+      <ul class="navigation-menu-list">
+        <li class="navigation-menu-item">
+          <a class="navigation-menu-link" href="#">Доставка</a>
         </li>
         <li class="navigation-menu-item">
-          <a class="navigation-menu-link" href="delivery.html">Доставка</a>
+          <a class="navigation-menu-link" href="#">Гарантия</a>
         </li>
         <li class="navigation-menu-item">
-          <a class="navigation-menu-link" href="warranty.html">Гарантия</a>
-        </li>
-        <li class="navigation-menu-item">
-          <a class="navigation-menu-link" href="contacts.html">Контакты</a>
+          <a class="navigation-menu-link" href="#">Контакты</a>
         </li>
       </ul>
+    </div>
 
       <ul class="navigation-menu-catalog visually-hidden">
         <li class="navigation-menu-catalog-item">
-          <a class="navigation-menu-catalog-link" href="virtual.html">Виртуальная реальность</a>
-          <a class="navigation-menu-catalog-link" href="bracelets.html">Фитнес-браслеты</a>
-          <a class="navigation-menu-catalog-link" href="quadrocopters.html">Квадрокоптеры</a>
+          <a class="navigation-menu-catalog-link" href="#">Виртуальная реальность</a>
+          <a class="navigation-menu-catalog-link" href="#">Фитнес-браслеты</a>
+          <a class="navigation-menu-catalog-link" href="#">Квадрокоптеры</a>
         </li>
         <li class="navigation-menu-catalog-item">
-          <a class="navigation-menu-catalog-link" href="monopods.html">Моноподы для селфи</a>
-          <a class="navigation-menu-catalog-link" href="watch.html">Умные часы</a>
+          <a class="navigation-menu-catalog-link" href="#">Моноподы для селфи</a>
+          <a class="navigation-menu-catalog-link" href="#">Умные часы</a>
         </li>
         <li class="navigation-menu-catalog-item">
-          <a class="navigation-menu-catalog-link" href="cameras.html">Экшн-камеры</a>
+          <a class="navigation-menu-catalog-link" href="#">Экшн-камеры</a>
         </li>
       </ul>
 
     </nav>
-    </header>
+  </header>
   <!-- ##### Header Area End ##### -->
 
   <!-- ##### Catalog Area ##### -->
@@ -134,7 +136,7 @@
     </header>
 
     <!-- ## Filter Area ## -->
-
+     
   <div class="catalog-products-container">
 
     <section class="catalog-products-filter">
@@ -225,7 +227,7 @@
         <button class="catalog-filter-button" type="submit">Показать</button>
       </form>
       </section>
-    
+     
       <!-- ## Sorting Area ## -->
 
       <section class="catalog-products">
@@ -355,7 +357,7 @@
     </div>
     
       </section>
-  
+  </div>
   </main>
   <!-- ##### Catalog Area End ##### -->
 
