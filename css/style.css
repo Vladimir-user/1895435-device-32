@@ -142,7 +142,6 @@ body {
 
 .navigation-menu-container {
   display: flex;
-<<<<<<< HEAD
   align-items: flex-start;
   margin: 10px 0 40px 0;
   padding: 0;
@@ -157,8 +156,6 @@ body {
 
 .navigation-menu-list {
   display: flex;
-=======
->>>>>>> 9749e5da42d1858aa1754cc23d1df377494c7ae5
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
