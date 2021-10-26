@@ -251,78 +251,70 @@
 
         <!-- ## Products Area ## -->
 
-        <ul class="product-list">
-          <li class="product-card">
-            <img class="product-card-image product-current" src="img/catalog/product-1.jpg" width="360" height="380"
-              alt="Любительская селфи-палка">
-            <a class="button-product-current visually-hidden" href="#">
-              Подробнее
-            </a>
-            <ul class="product-card-list">
-              <li class="product-card-item">
+        <div class="product-list">
+            <ul class="product-card">
+              <li class="product-card-item-image">
+                <img class="product-card-image product-current" src="img/catalog/product-1.jpg" width="360" height="380"
+                  alt="Любительская селфи-палка">
+                <a class="button-product-current visually-hidden" href="#">
+                  Подробнее
+                </a>
+              </li>
+              <li class="product-card-item-title">
                 <a class="product-card-link" href="#">
                   <h3 class="product-card-title">Любительская селфи-палка</h3>
                 </a>
               </li>
-              <li class="product-card-item">
+              <li class="product-card-item-price">
                 <b class="product-card-price">500 ₽</b>
               </li>
             </ul>
-          </li>
-
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/product-2.jpg" width="360" height="380"
+            <ul class="product-card">
+              <li class="product-card-item-image">
+                <img class="product-card-image" src="img/catalog/product-2.jpg" width="360" height="380"
                 alt="Профессиональная селфи-палка">
-            </a>
-            <ul class="product-card-list">
-              <li class="product-card-item">
+              </li>
+              <li class="product-card-item-title">
                 <a class="product-card-link" href="#">
                   <h3 class="product-card-title">Профессиональная<br>селфи-палка</h3>
                 </a>
               </li>
-              <li class="product-card-item">
+              <li class="product-card-item-price">
                 <b class="product-card-price">1 500 ₽</b>
               </li>
             </ul>
-          </li>
-
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/product-3.jpg" width="360" height="380"
+            <ul class="product-card">
+              <li class="product-card-item-image">
+                <img class="product-card-image" src="img/catalog/product-3.jpg" width="360" height="380"
                 alt="Непотопляемая селфи-палка">
-            </a>
-            <ul class="product-card-list">
-              <li class="product-card-item">
+              </li>
+              <li class="product-card-item-title">
                 <a class="product-card-link" href="#">
                   <h3 class="product-card-title">Непотопляемая<br>селфи-палка</h3>
                 </a>
               </li>
-              <li class="product-card-item">
+              <li class="product-card-item-price">
                 <b class="product-card-price">2 500 ₽</b>
               </li>
             </ul>
-          </li>
-
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/product-4.jpg" width="360" height="380"
+            <ul class="product-card">
+              <li class="product-card-item-image">
+                <img class="product-card-image" src="img/catalog/product-4.jpg" width="360" height="380"
                 alt="Селфи-палка «Следуй за мной»">
-            </a>
-            <ul class="product-card-list">
-              <li class="product-card-item">
+              </li>
+              <li class="product-card-item-title">
                 <a class="product-card-link" href="#">
                   <h3 class="product-card-title">Селфи-палка «Следуй<br>за мной»</h3>
                 </a>
               </li>
-              <li class="product-card-item">
+              <li class="product-card-item-price">
                 <b class="product-card-price">4 900 ₽</b>
               </li>
             </ul>
-          </li>
-        </ul>
+          </div>
 
         <!-- Upload button-->
+
         <div class="product-list-container">
           <div class="button-upload-more">
             <button class="button-upload" type="button">Загрузить еще</button>
@@ -330,29 +322,31 @@
 
           <!-- Pagination -->
 
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link-prev" href="#">Назад</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
+          <div class="pagination-container">
+
+               <a class="pagination-link-prev" href="#">Назад</a>
+
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current" href="#">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">15</a>
+              </li>
+            </ul>
+
               <a class="pagination-link-next" href="#">Вперед</a>
-            </li>
-          </ul>
+                    
+          </div>
         </div>
 
       </section>
@@ -405,17 +399,17 @@
 
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-button" href="https://www.facebook.com/">
+            <a class="footer-social-button" href="https://www.facebook.com/htmlacademy">
               <img src="img/facebook_btn.svg" width="9" height="18" alt="Фэйсбук">
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-button" href="https://www.instagram.com/">
+            <a class="footer-social-button" href="https://www.instagram.com/htmlacademy/">
               <img src="img/instagram_btn.svg" width="16" height="16" alt="Инстаграм">
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-button" href="https://twitter.com/">
+            <a class="footer-social-button" href="https://twitter.com/htmlacademy_ru">
               <img src="img/twitter_btn.svg" width="15" height="14" alt="Твиттер">
             </a>
           </li>
