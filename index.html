@@ -49,18 +49,19 @@
             <a class="navigation-list-link" href="#">
               <svg class="navigation-list-icon" aria-hidden="true" focusable="false" width="13" height="12"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12z"
-                  fill="#000" />
+                <path
+                  d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12z" />
               </svg>
               <span class="visually-hidden">Кнопка Войти</span>
               Войти
             </a>
+
           </li>
           <li class="navigation-list-item">
             <a class="navigation-list-link" href="#">
               <svg class="navigation-list-icon" aria-hidden="true" focusable="false" width="10" height="12"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 0H4v12h2V0zM2 4H0v8h2V4zm8-1H8v9h2V3z" fill="#000" />
+                <path d="M6 0H4v12h2V0zM2 4H0v8h2V4zm8-1H8v9h2V3z" />
               </svg>
               <span class="visually-hidden">Кнопка Сравнить</span>
               Сравнить
@@ -68,10 +69,13 @@
           </li>
           <li class="navigation-list-item">
             <a class="navigation-list-link" href="#">
-              <svg class="navigation-list-icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
-              <path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8zM8 1.9l2.2 3.2H5.9L8 1.9z" fill="#000"/>
-            </svg>
-            <span class="visually-hidden">Кнопка Корзина</span>
+              <svg class="navigation-list-icon" aria-hidden="true" focusable="false" width="16" height="14"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8zM8 1.9l2.2 3.2H5.9L8 1.9z" />
+
+              </svg>
+              <span class="visually-hidden">Кнопка Корзина</span>
               Корзина
             </a>
           </li>
@@ -146,11 +150,18 @@
             под стандартную камеру</p>
           <div class="slider-pagination-container">
             <a class="slider-link" href="#">Подробнее</a>
-            <div class="slider-pagination-dicks">
-              <img class="pagination-dick active" src="img/dick_aktive.svg">
-              <img class="pagination-dick" src="img/dick_empty.svg">
-              <img class="pagination-dick" src="img/dick_empty.svg">
-            </div>
+            <ol class="slider-pagination-dicks">
+              <li class="slider-pagination-dicks-item">
+                <img class="pagination-dick active" src="img/dick_aktive.svg" alt="Слайд 1">
+              </li>
+              <li class="slider-pagination-dicks-item">
+                <img class="pagination-dick" src="img/dick_empty.svg" alt="Слайд 2">
+
+              </li>
+              <li class="slider-pagination-dicks-item">
+                <img class="pagination-dick" src="img/dick_empty.svg" alt="Слайд 3">
+              </li>
+            </ol>
           </div>
 
           <ul class="slider-property">

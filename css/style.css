@@ -138,16 +138,20 @@ body {
   padding: 5px 20px 5px 20px;
 }
 
-.navigation-list-link:focus {
- box-shadow: inset 0 0 0 2px #AF4FFF;
- outline: none;
- border-radius: 20px;
-}
-
-.navigation-list-link:hover .navigation-list-icon path  {
+.navigation-list-link:hover  {
   color: rgb(0, 0, 0, 0.6);
   fill: rgb(0, 0, 0, 0.6);
-  
+}
+
+.navigation-list-link:focus {
+  box-shadow: inset 0 0 0 2px #AF4FFF;
+  outline: none;
+  border-radius: 20px;
+ }
+
+.navigation-list-link:active  {
+  color: rgb(0, 0, 0, 0.3);
+  fill: rgb(0, 0, 0, 0.3);
 }
 
 .navigation-list-icon {
@@ -324,6 +328,7 @@ body {
   display: grid;
   grid-template-columns: 34px 34px 34px;
   margin-left: 170px;
+  list-style-type: none;
 }
 
 .slider-property {
