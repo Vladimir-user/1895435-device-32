@@ -131,14 +131,22 @@
 
     <section class="slider">
       <h2 class="visually-hidden">Популярные товары</h2>
-
+    
       <a class="slider-link-previous" href="#">
-        <img class="img-slider-previous" src="img/left-tall-arrow.svg" width="20" height="60" alt="Предыдущий товар">
+        <svg aria-hidden="true" focusable="false" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60z" />
+        </svg>
+        <span class="visually-hidden">Предыдущий товар</span>
       </a>
       <a class="slider-link-next" href="#">
-        <img class="img-slider-next" src="img/right-tall-arrow.svg" width="20" height="60" alt="Следующий товар">
+        <svg aria-hidden="true" focusable="false" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 60h3.5L20 30 3.5 0H0l16.2 30L0 60z" />
+        </svg>
+        <span class="visually-hidden">Следующий товар</span>
       </a>
-
+      <!--
+          -->
+    
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <img class="slider-pagination-img slider-pagination-img-current" src="img/quadrocopter.png" width="560"
@@ -150,16 +158,22 @@
             под стандартную камеру</p>
           <div class="slider-pagination-container">
             <a class="slider-link" href="#">Подробнее</a>
+
             <ol class="slider-pagination-dicks">
               <li class="slider-pagination-dicks-item">
-                <img class="pagination-dick active" src="img/dick_aktive.svg" alt="Слайд 1">
+                <button class="pagination-dick active">
+                  <span class="visually-hidden">Слайд 1</span>
+                </button>
               </li>
               <li class="slider-pagination-dicks-item">
-                <img class="pagination-dick" src="img/dick_empty.svg" alt="Слайд 2">
-
+                <button class="pagination-dick">
+                  <span class="visually-hidden">Слайд 2</span>
+                </button>
               </li>
               <li class="slider-pagination-dicks-item">
-                <img class="pagination-dick" src="img/dick_empty.svg" alt="Слайд 3">
+                <button class="pagination-dick">
+                  <span class="visually-hidden">Слайд 3</span>
+                </button>
               </li>
             </ol>
           </div>
