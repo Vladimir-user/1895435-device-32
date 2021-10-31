@@ -42,7 +42,8 @@
         <!-- Search Form -->
         <form class="search-form" action="#" method="get">
           <img class="search-form-button" src="img/search_img.svg" width="16" height="16" alt="Кнопка Поиск">
-          <input class="form-control" type="search" name="search" placeholder="Поиск по сайту">
+          <input class="form-control" type="search" name="search" placeholder="Поиск по сайту" required>
+          <button class="button-search" type="submit">Найти</button>
         </form>
         <ul class="navigation-list">
           <li class="navigation-list-item">
@@ -68,7 +69,7 @@
             </a>
           </li>
           <li class="navigation-list-item">
-            <a class="navigation-list-link" href="#">
+            <a class="navigation-list-link cart" href="#">
               <svg class="navigation-list-icon" aria-hidden="true" focusable="false" width="16" height="14"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -85,9 +86,15 @@
       <!-- Nav Menu -->
       <div class="navigation-menu-container">
         <div class="navigation-menu-products">
-          <a class="navigation-menu-link" href="catalog.html">Каталог товаров</a>
-          <img class="navigation-menu-icon" src="img/catalog_btn.svg" width="50" height="50"
-            alt="Кнопка развернуть Каталог">
+          <a class="navigation-menu-link catalog" href="catalog.html">Каталог товаров</a>
+  <!--       <img class="navigation-menu-icon" src="img/catalog_btn.svg" width="50" height="50"
+            alt="Кнопка развернуть Каталог"> --> 
+             <svg class="navigation-list-icon" aria-hidden="true" focusable="false" width="50" height="50"
+              xmlns="http://www.w3.org/2000/svg">
+              <path opacity=".3" d="M25 49c13.255 0 24-10.745 24-24S38.255 1 25 1 1 11.745 1 25s10.745 24 24 24z" stroke="#000" stroke-width="2" style="fill:none;"/>
+              <path opacity=".3" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2z"/> 
+            </svg>
+            <span class="visually-hidden">Кнопка развернуть Каталог</span> 
         </div>
         <ul class="navigation-menu-list">
           <li class="navigation-menu-item">
@@ -198,7 +205,9 @@
           <p class="slider-slogan">Худеем правильно!</p>
           <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
             соблюдать диету.</p>
-          <a class="slider-link" href="#">Подробнее</a>
+      
+            <botton class="slider-link">Подробнее</botton>
+
           <dl class="slider-property">
             <dt class="slider-property-term">48 часов</dt>
             <dd class="slider-property-description">Без подзарядки</dd>
@@ -431,7 +440,7 @@
 
         <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="POST">
           <p>
-            <input class="appointment-form-email" type="text" name="email" placeholder="Ваш e-mail">
+            <input class="appointment-form-email" type="text" name="email" placeholder="Ваш e-mail" required>
             <button class="appointment-form-button" type="submit">Подписаться</button>
           </p>
           <p>
