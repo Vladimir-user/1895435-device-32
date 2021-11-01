@@ -79,7 +79,37 @@
               <span class="visually-hidden">Кнопка Корзина</span>
               Корзина
             </a>
+
+            <div class="popover popover-cart">
+              <div class="popover-content">
+                <h2 class="popover-title visually-hidden">Корзина</h2>
+                <ul class="popover-cart-list">
+                  <li class="popover-cart-item">
+                    <img class="popover-cart-image" src="img/catalog/simple-small.png" alt="Любительская селфи-палка">
+                    <p class="popover-cart-title">
+                      Любительская селфи-палка
+                    </p>
+                    <span class="popover-cart-btn-close"></span>
+                    <span class="visually-hidden">Кнопка закрыть</span>
+                  </li>
+                  <li class="popover-cart-item">
+                    <img class="popover-cart-image" src="img/catalog/proff-small.png" alt="Профессиональная селфи-палка">
+                    <p class="popover-cart-title">
+                      Профессиональная селфи-палка
+                    </p>
+                    <span class="popover-cart-btn-close"></span>
+                    <span class="visually-hidden">Кнопка закрыть</span>
+                </ul>
+                <div class="cart-result">
+                  <span class="cart-result-product">Товаров: 2</span>
+                  <span class="cart-result-sum">Сумма: 2000 ₽</span>
+                </div>
+                  <button class="cart-result-button" type="button">Открыть корзину</button>
+               
+              </div>
+            </div>
           </li>
+
         </ul>
       </div>
 
@@ -87,9 +117,7 @@
       <div class="navigation-menu-container">
         <div class="navigation-menu-products">
           <a class="navigation-menu-link catalog" href="catalog.html">Каталог товаров</a>
-  <!--       <img class="navigation-menu-icon" src="img/catalog_btn.svg" width="50" height="50"
-            alt="Кнопка развернуть Каталог"> --> 
-             <svg class="navigation-list-icon" aria-hidden="true" focusable="false" width="50" height="50"
+            <svg class="navigation-list-icon" aria-hidden="true" focusable="false" width="50" height="50"
               xmlns="http://www.w3.org/2000/svg">
               <path opacity=".3" d="M25 49c13.255 0 24-10.745 24-24S38.255 1 25 1 1 11.745 1 25s10.745 24 24 24z" stroke="#000" stroke-width="2" style="fill:none;"/>
               <path opacity=".3" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2z"/> 
@@ -530,6 +558,19 @@
     </footer>
   </div>
   <!-- #### Footer Area End #### -->
+
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </section>
+
+      </div>
+    </div>
+ 
 </body>
 
 </html>
