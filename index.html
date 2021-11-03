@@ -233,9 +233,7 @@
           <p class="slider-slogan">Худеем правильно!</p>
           <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
             соблюдать диету.</p>
-      
-            <botton class="slider-link">Подробнее</botton>
-
+            <a class="slider-link" href="#">Подробнее</a>
           <dl class="slider-property">
             <dt class="slider-property-term">48 часов</dt>
             <dd class="slider-property-description">Без подзарядки</dd>
@@ -250,7 +248,7 @@
           <p class="slider-slogan">Делай селфи, как Бен Стиллер!</p>
           <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
             длиной и весом всего 5 кг.</p>
-          <a class="slider-link" href="#">Подробнее</a>
+            <a class="slider-link" href="#">Подробнее</a>
           <dl class="slider-property">
             <dt class="slider-property-term">8,5 м</dt>
             <dd class="slider-property-description">Длина палки</dd>
@@ -567,7 +565,46 @@
             <span class="visually-hidden">Закрыть</span>
           </button>
         </section>
-
+        
+        <form class="order-form" action="https://echo.htmlacademy.ru/" method="POST">
+          <div class="field-group order-form-name">
+            <label class="form-label" for="order-name">
+             Ваше имя:
+            </label>
+            <input class="field name" type="text" id="order-name" name="order-name" placeholder="Имя Фамилия" required>
+            <span class="field-subtitle red">Пожалуйста, предствьтесь</span>
+            </div>
+          <div class="field-group order-form-email">
+            <label class="form-label" for="order-email">
+             Ваш e-mail:
+            </label>
+            <input class="field email" type="text" id="order-email" name="order-email" placeholder="krasotka92@mail.ru" required>
+            <span class="field-subtitle">Забавный у вас адрес</span>
+          </div>
+          <div class="field-group order-form-what">
+            <label class="form-label" for="order-what">
+             Что нужно привезти:
+            </label>
+            <input class="field what" type="text" id="order-what" name="order-what" placeholder="В свободной форме" required>
+          </div>
+          <div class="field-group order-form-quantity">
+            <label class="form-label" for="order-quantity">
+              Количество:
+            </label>
+            <button class="botton-info">i</button>
+            <div class="quantity-block">
+              <button class="btn-quantity minus"></button>
+              <input class="quantity" type="number" id="order-quantity" name="order-quantity" value="1">
+              <button class="btn-quantity plus"></button>
+            </div>
+          </div>
+          <button class="button-order-submit" type="submit">Отправить</button>
+          <div class="modal modal-info">
+            <p class="modal-info-text">
+              Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br>к провозу багажа.
+            </p>
+          </div>
+        </form>
       </div>
     </div>
  
