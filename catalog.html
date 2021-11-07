@@ -110,6 +110,7 @@
                     </a>
                     <button class="popover-cart-btn-close" type="button"></button>
                     <span class="visually-hidden">Кнопка закрыть</span>
+                  </li>
                 </ul>
                 <div class="cart-result">
                   <span class="cart-result-product">Товаров: 2</span>
@@ -228,12 +229,10 @@
                 </div>
 
                 <div class="range-wrapper-inputs">
-                  <label class="catalog-filter-label">
-                    от <input class="catalog-filter-input" type="number" value="0" name="min-price">
-                  </label>
-                  <label class="catalog-filter-label">
-                    до <input class="catalog-filter-input" type="number" value="5000" name="max-price">
-                  </label>
+                  <input class="catalog-filter-input" id="max-price" type="number" value="5000" name="max-price">
+                  <label class="catalog-filter-label" for="max-price">до</label>
+                  <input class="catalog-filter-input" id="min-price" type="number" value="0" name="min-price">
+                  <label class="catalog-filter-label" for="min-price">от</label>
                 </div>
 
           </div>
@@ -345,60 +344,76 @@
         <div class="product-list">
             <ul class="product-card">
               <li class="product-card-item-image">
-                <img class="product-card-image product-current" src="img/catalog/product-1.jpg" width="360" height="380"
-                  alt="Любительская селфи-палка">
-                  <button class="button-product" type="button">Подробнее</button>
-                  <span class="visually-hidden">Кнопка подробнее</span>
+                <a class="product-card-link-image" href="#">
+                  <img class="product-card-image product-current" src="img/catalog/product-1.jpg" width="360" height="380"
+                    alt="Любительская селфи-палка">
+                </a>
+                <button class="button-product" type="button">Подробнее</button>
+                <span class="visually-hidden">Кнопка подробнее</span>
               </li>
               <li class="product-card-item-title">
-                <a class="product-card-link" href="#">
+                <a class="product-card-link-title" href="#">
                   <h3 class="product-card-title">Любительская селфи-палка</h3>
                 </a>
               </li>
               <li class="product-card-item-price">
-                <b class="product-card-price">500 ₽</b>
+                <a class="product-card-link-price" href="#">
+                  <b class="product-card-price">500 ₽</b>
+                </a>
               </li>
             </ul>
             <ul class="product-card">
               <li class="product-card-item-image">
-                <img class="product-card-image" src="img/catalog/product-2.jpg" width="360" height="380"
-                alt="Профессиональная селфи-палка">
+                <a class="product-card-link-image" href="#">
+                  <img class="product-card-image" src="img/catalog/product-2.jpg" width="360" height="380"
+                    alt="Профессиональная селфи-палка">
+                </a>
               </li>
               <li class="product-card-item-title">
-                <a class="product-card-link" href="#">
+                <a class="product-card-link-title" href="#">
                   <h3 class="product-card-title">Профессиональная<br>селфи-палка</h3>
                 </a>
               </li>
               <li class="product-card-item-price">
-                <b class="product-card-price">1 500 ₽</b>
+                <a class="product-card-link-price" href="#">
+                  <b class="product-card-price">1 500 ₽</b>
+                </a>
               </li>
             </ul>
             <ul class="product-card">
               <li class="product-card-item-image">
-                <img class="product-card-image" src="img/catalog/product-3.jpg" width="360" height="380"
-                alt="Непотопляемая селфи-палка">
+                <a class="product-card-link-image" href="#">
+                  <img class="product-card-image" src="img/catalog/product-3.jpg" width="360" height="380"
+                    alt="Непотопляемая селфи-палка">
+                </a>
               </li>
               <li class="product-card-item-title">
-                <a class="product-card-link" href="#">
+                <a class="product-card-link-title" href="#">
                   <h3 class="product-card-title">Непотопляемая<br>селфи-палка</h3>
                 </a>
               </li>
               <li class="product-card-item-price">
-                <b class="product-card-price">2 500 ₽</b>
+                <a class="product-card-link-price" href="#">
+                  <b class="product-card-price">2 500 ₽</b>
+                </a>
               </li>
             </ul>
             <ul class="product-card">
               <li class="product-card-item-image">
-                <img class="product-card-image" src="img/catalog/product-4.jpg" width="360" height="380"
-                alt="Селфи-палка «Следуй за мной»">
+                <a class="product-card-link-image" href="#">
+                  <img class="product-card-image" src="img/catalog/product-4.jpg" width="360" height="380"
+                    alt="Селфи-палка «Следуй за мной»">
+                </a>
               </li>
               <li class="product-card-item-title">
-                <a class="product-card-link" href="#">
+                <a class="product-card-link-title" href="#">
                   <h3 class="product-card-title">Селфи-палка «Следуй<br>за мной»</h3>
                 </a>
               </li>
               <li class="product-card-item-price">
-                <b class="product-card-price">4 900 ₽</b>
+                <a class="product-card-link-price" href="#">
+                  <b class="product-card-price">4 900 ₽</b>
+                </a>
               </li>
             </ul>
           </div>
