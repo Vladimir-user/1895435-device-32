@@ -129,9 +129,25 @@
       <!-- Nav Menu -->
       <div class="navigation-menu-container">
         <div class="navigation-menu-products">
-          <a class="navigation-menu-link catalog" href="catalog.html">Каталог товаров</a>
+          <a class="navigation-menu-link catalog" href="#menu-catalog">Каталог товаров</a>
           <button class="button-catalog" type="button"></button>
           <span class="visually-hidden">Кнопка развернуть Каталог</span>
+          <div class="popover-menu-catalog" id="menu-catalog">
+            <ul class="navigation-menu-catalog">
+              <li class="navigation-menu-catalog-item">
+                <a class="navigation-menu-catalog-link" href="#">Виртуальная реальность</a>
+                <a class="navigation-menu-catalog-link" href="#">Фитнес-браслеты</a>
+                <a class="navigation-menu-catalog-link" href="#">Квадрокоптеры</a>
+              </li>
+              <li class="navigation-menu-catalog-item">
+                <a class="navigation-menu-catalog-link" href="#">Моноподы для селфи</a>
+                <a class="navigation-menu-catalog-link" href="#">Умные часы</a>
+              </li>
+              <li class="navigation-menu-catalog-item">
+                <a class="navigation-menu-catalog-link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <ul class="navigation-menu-list">
           <li class="navigation-menu-item">
@@ -151,24 +167,6 @@
           </li>
         </ul>
       </div>
-
-      <div class="popover-menu-catalog visually-hidden">
-        <ul class="navigation-menu-catalog">
-          <li class="navigation-menu-catalog-item">
-            <a class="navigation-menu-catalog-link" href="#">Виртуальная реальность</a>
-            <a class="navigation-menu-catalog-link" href="#">Фитнес-браслеты</a>
-            <a class="navigation-menu-catalog-link" href="#">Квадрокоптеры</a>
-          </li>
-          <li class="navigation-menu-catalog-item">
-            <a class="navigation-menu-catalog-link" href="#">Моноподы для селфи</a>
-            <a class="navigation-menu-catalog-link" href="#">Умные часы</a>
-          </li>
-          <li class="navigation-menu-catalog-item">
-            <a class="navigation-menu-catalog-link" href="#">Экшн-камеры</a>
-          </li>
-        </ul>
-      </div>
-
     </nav>
     <p class="slider-number">01</p>
   </header>
@@ -286,50 +284,38 @@
         <li class="choice-catalog-item">
           <a class="choice-catalog-link-img vreality" href="#">
             <span class="visually-hidden">Раздел виртуальная реальность</span>
-          </a>
-          <a class="choice-catalog-link" href="#">
-            <h3>Виртуальная реальность</h3>
+            <h3 class="choice-catalog-title">Виртуальная реальность</h3>
           </a>
         </li>
         <li class="choice-catalog-item">
           <a class="choice-catalog-link-img monopod" href="#">
             <span class="visually-hidden">Раздел моноподы для селфи</span>
-          </a>
-          <a class="choice-catalog-link" href="#">
-            <h3>Моноподы<br>
+            <h3 class="choice-catalog-title">Моноподы<br>
               для селфи</h3>
           </a>
         </li>
         <li class="choice-catalog-item">
           <a class="choice-catalog-link-img camera" href="#">
             <span class="visually-hidden">Раздел экшн-камеры</span>
-          </a>
-          <a class="choice-catalog-link" href="#">
-            <h3>Экшн-камеры</h3>
+            <h3 class="choice-catalog-title">Экшн-камеры</h3>
           </a>
         </li>
         <li class="choice-catalog-item">
           <a class="choice-catalog-link-img bracelet" href="#">
             <span class="visually-hidden">Раздел фитнес-браслеты</span>
-          </a>
-          <a class="choice-catalog-link" href="#">
-            <h3>Фитнес&hybull;браслеты</h3>
+          <h3 class="choice-catalog-title">Фитнес&hybull;браслеты</h3>
           </a>
         </li>
         <li class="choice-catalog-item">
           <a class="choice-catalog-link-img watch" href="#">
             <span class="visually-hidden">Раздел умные часы</span>
-          </a>
-          <a class="choice-catalog-link" href="#">
-            <h3>Умные часы</h3>
+            <h3 class="choice-catalog-title">Умные часы</h3>
           </a>
         </li>
         <li class="choice-catalog-item">
           <a class="choice-catalog-link-img quadrocopter" href="#">
             <span class="visually-hidden">Раздел квадрокоптеры</span>
-          </a>
-          <a class="choice-catalog-link" href="#">
-            <h3>Квадрокоптеры</h3>
+            <h3 class="choice-catalog-title">Квадрокоптеры</h3>
           </a>
         </li>
       </ul>

@@ -263,20 +263,18 @@ body {
   position: absolute;
 }
 
-.navigation-list-item {
-  position: relative;
-}
-
 /* == Popover == */
-/*
+
 .popover-cart {
-  opacity: 0;
+  display: none;
+  position: relative;
+  z-index: 3;
 }
 
-.navigation-list-link.cart:hover+.popover-cart {
-  opacity: 1;
+#popover-cart:target {
+  display: block;
 }
-*/
+
 .popover-content {
   width: 320px;
   min-height: 135px;
@@ -286,7 +284,8 @@ body {
   line-height: 20px;
   color:#FFFFFF;
   position: absolute;
-  right: -50px;
+  top: 10px;
+  right: -59px;
   text-align: center;
   z-index: 1;
 }
@@ -294,7 +293,7 @@ body {
 .popover-content::before {
   content: "";
   position: absolute;
-  top: -6px;
+  top: -4px;
   left: 153px;
   width: 14px;
 	height: 14px;
@@ -538,16 +537,29 @@ body {
   background: #ffe17f url("../img/plus_btn.svg") no-repeat center;
   opacity: 20%;
   cursor: pointer;
+  outline: none;
 }
 
-.button-catalog:hover {
+.navigation-menu-link.catalog:hover ~ .button-catalog {
   background: #ffe17f url("../img/minus_btn.svg") no-repeat center;
   opacity: 100%;
 }
 
-.button-catalog:active {
+.navigation-menu-link.catalog:active ~ .button-catalog {
   background: #ffe17e url("../img/minus_btn.svg") no-repeat center;
   opacity: 20%;
+}
+
+.navigation-menu-link.catalog:hover ~ .popover-menu-catalog {
+  display: block;
+}
+
+.navigation-menu-link.catalog:focus ~ .popover-menu-catalog {
+  display: block;
+}
+
+#menu-catalog:target {
+  display: block;
 }
 
 /* == 3.1.3 Naviation menu-catalog == */
@@ -556,11 +568,11 @@ body {
   position: absolute;
   width: 1160px;
   height: 180px;
-  top: 160px;
+  top: 55px;
   left: 0;
   background-color: #ffe17f;
-  z-index: 2;
-
+  z-index: 1;
+  display: none;
 }
 
 .navigation-menu-catalog {
@@ -573,7 +585,7 @@ body {
 }
 
 .navigation-menu-catalog-item {
-  width: 220px;
+  width: 225px;
 }
 
 .navigation-menu-catalog-link {
@@ -603,7 +615,7 @@ body {
 /* == 3.1.3 Slider == */
 
 .slider-number {
-  margin: 42px 70px 50px 890px;
+  margin: 42px 70px 40px 890px;
   font-weight: 800;
   font-size: 180px;
   line-height: 30px;
@@ -628,7 +640,7 @@ body {
   width: 20px;
   height: 60px;
   position: absolute;
-  top: 80px;
+  top: 87px;
   left: 9px;
   padding: 10px;
   margin: 0;
@@ -651,7 +663,7 @@ border-radius: 5px;
   width: 20px;
   height: 60px;
   position: absolute;
-  top: 80px;
+  top: 87px;
   left: 510px;
   padding: 10px;
   margin: 0;
@@ -668,7 +680,7 @@ border-radius: 5px;
 
 .slider-pagination-item {
   width: 560px;
-  margin: -64px 0 0 0;
+  margin: -54px 0 0 0;
 }
 
 .slider-slogan {
@@ -833,10 +845,6 @@ border-radius: 5px;
   background-color: #ffe17f;
 }
 
-.choice-catalog-link {
-  outline: none;
-}
-
 .vreality {
   background: #ffe17f url("../img/cat_glasses.svg") no-repeat center;
 }
@@ -863,14 +871,15 @@ border-radius: 5px;
   background: #ffe17f url("../img/cat_quadrocopter.svg") no-repeat center;
 }
 
-.choice-catalog h3 {
+.choice-catalog-title {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
   text-decoration: none;
   color: #000000;
-  margin-top: 32px;
+  padding-top: 192px;
+  margin-top: 0;
 }
 
 .choice-catalog a {
@@ -899,7 +908,7 @@ border-radius: 5px;
   width: 100%;
   display: block;
   min-height: 288px;
-  margin: 167px auto 80px auto;
+  margin: 265px auto 80px auto;
   background-color: #F0F0F0;
   position: relative;
   z-index: 0;
