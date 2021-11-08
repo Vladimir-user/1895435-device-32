@@ -156,7 +156,7 @@ body {
   height: 40px;
   font-size: 16px;
   line-height: 19px;
-  color:  transparent; 
+  color:  transparent;
   background-color: transparent;
   border: none;
   box-shadow: inset 0 0 0 2px transparent;
@@ -176,12 +176,12 @@ body {
   color: #ffffff;
   background-color: #000000;
   box-shadow: inset 0 0 0 2px #000000;
-}  
+}
 
 .button-search:active {
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 0 0 2px #000000;
-}  
+}
 
 .form-control {
   outline: 0;
@@ -268,7 +268,15 @@ body {
 }
 
 /* == Popover == */
+/*
+.popover-cart {
+  opacity: 0;
+}
 
+.navigation-list-link.cart:hover+.popover-cart {
+  opacity: 1;
+}
+*/
 .popover-content {
   width: 320px;
   min-height: 135px;
@@ -295,25 +303,18 @@ body {
 }
 
 .popover-cart-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.popover-cart-item {
   display: grid;
   grid-template-columns: 1px 51px 157px 51px;
   column-gap: 20px;
   justify-items: center;
   text-align: left;
-  margin-top: 20px;
+  padding: 0;
+  margin: 20px 0 20px 0;
+  list-style-type: none;
   position: relative;
-  cursor: pointer;
 }
 
-.popover-cart-link {
+.popover-cart-item-image {
   grid-column: 2/3;
   width: 41px;
   height: 43px;
@@ -321,15 +322,7 @@ body {
   outline: none;
 }
 
-.popover-cart-image:hover {
-  opacity: 0.5;
-}
-
-.popover-cart-link:focus {
-  border-color: #AF4FFF;
-}
-
-.popover-cart-title {
+.popover-cart-link {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -337,18 +330,7 @@ body {
   margin-top: 3px;
   margin-bottom: 23px;
   outline: none;
-}
-
-.popover-cart-title:hover {
-  color: rgb(255, 255, 255, 0.3);
-}
-
-.popover-cart-title:focus {
-  color: #AF4FFF;
-}
-
-.popover-cart-title:active {
-  color: rgb(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 .popover-cart-btn-close {
@@ -385,18 +367,49 @@ body {
   transform: rotate(-45deg);
 }
 
-.popover-cart-btn-close:hover::before,
-.popover-cart-btn-close:hover::after {
-  background-color: rgb(255, 255, 255, 0.3);
+.popover-cart-link:hover .popover-cart-image {
+  opacity: 60%;
 }
 
-.popover-cart-btn-close:focus {
+.popover-cart-link:hover .popover-cart-item-title{
+  opacity: 60%;
+}
+
+.popover-cart-link:hover .popover-cart-btn-close::before {
+  opacity: 60%;
+}
+
+.popover-cart-link:hover .popover-cart-btn-close::after {
+  opacity: 60%;
+}
+
+
+.popover-cart-link:focus .popover-cart-item-image {
+  border-color: #af4fff;
+}
+
+.popover-cart-link:focus .popover-cart-item-title {
+  color: #af4fff;
+}
+
+.popover-cart-link:focus .popover-cart-btn-close {
   border-color: #AF4FFF;
 }
 
-.popover-cart-btn-close:active::before,
-.popover-cart-btn-close:active::after {
-  background-color: rgb(255, 255, 255, 0.6);
+.popover-cart-link:active .popover-cart-image {
+  opacity: 30%;
+}
+
+.popover-cart-link:active .popover-cart-item-title {
+  opacity: 30%;
+}
+
+.popover-cart-link:active .popover-cart-btn-close::before {
+  opacity: 30%;
+}
+
+.popover-cart-link:active .popover-cart-btn-close::after {
+  opacity: 30%;
 }
 
 .cart-result {
@@ -503,7 +516,7 @@ body {
   position: absolute;
   bottom: 8px;
   width: 78%;
-  border-bottom: 2px solid #000000; 
+  border-bottom: 2px solid #000000;
 }
 
 .navigation-menu-link:focus {
@@ -679,7 +692,7 @@ border-radius: 5px;
 }
 
 .pagination-dick {
-  width: 12px; 
+  width: 12px;
   height: 12px;
   background-color: #ffffff;
   border-radius: 50%;
@@ -725,7 +738,7 @@ border-radius: 5px;
 }
 
 .button.slider-link {
-  width: 220px;  
+  width: 220px;
   padding: 10px 0 10px 0;
   margin: 0;
   position: relative;
@@ -1108,7 +1121,7 @@ button.services-menu-link.current {
   margin: 30px 0 58px 0;
   padding-left: 23px;
   list-style-type: none;
- 
+
 }
 
 .about-item {
@@ -2009,7 +2022,8 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-link,
+.breadcrumbs-link-current {
   font-size: 16px;
   line-height: 19px;
   color: rgb(0, 0, 0, 0.6);
@@ -2179,7 +2193,7 @@ input[type=number]::-webkit-outer-spin-button {
   left: 30%;
   padding: 0;
   margin: 0;
-  
+
 }
 .button-arrow-icon.up {
   transform: rotate(180deg);
@@ -2235,7 +2249,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .product-card-item-image {
   grid-column: 1/-1;
-  position: relative;
   padding: 0;
   margin: 0;
 }
@@ -2244,20 +2257,25 @@ input[type=number]::-webkit-outer-spin-button {
   justify-self: flex-end;
 }
 
-.product-card-link-image {
-  display: block;
-  height: 380px;
+.product-card-link {
+  outline: none;
+  text-decoration: none;
+  position: relative;
 }
 
-.product-card-link-image:focus {
+.product-card-link:hover .product-card-image {
+  opacity: 60%;
+}
+
+.product-card-link:focus .product-card-image{
   outline: 5px solid #af4fff;
 }
 
-.product-card-link-title:focus h3 {
+.product-card-link:focus .product-card-title {
   color: #af4fff;
 }
 
-.product-card-link-price:focus b {
+.product-card-link:focus .product-card-price {
   color: #af4fff;
 }
 
@@ -2265,15 +2283,16 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   width: 180px;
   height: 40px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
   left: 50%;
   transform: translateX(-50%);
   background-color: transparent;
   border: none;
   cursor: pointer;
   outline: none;
+  transition: opacity .35s ease;
   z-index: 2;
+  opacity: 0;
 }
 
 .button-product::before {
@@ -2295,6 +2314,11 @@ background-color: #ffc700;
   color: rgb(0, 0, 0, 0.6);
 }
 
+
+.product-card-link:hover .button-product {
+  opacity: 1;
+}
+
 .product-card-title {
   font-weight: 800;
   font-size: 18px;
@@ -2309,12 +2333,6 @@ background-color: #ffc700;
   width: 360px;
   height: 380px;
   object-fit: cover;
-}
-
-.product-card-link-title,
-.product-card-link-price {
-  text-decoration: none;
-  outline: none;
 }
 
 .product-card-price {
@@ -2654,7 +2672,7 @@ background-color: #ffc700;
   content: "";
 }
 
-.control-mark:hover, 
+.control-mark:hover,
 .control-mark-radio:hover {
   border-color: rgb(0, 0, 0, 0.5);
 }
@@ -2675,7 +2693,7 @@ background-color: #ffc700;
   color: rgb(0, 0, 0, 0.5);
 }
 
-.control-mark:focus, 
+.control-mark:focus,
 .control-mark-radio:focus {
   border-color: #af4fff;
 }
@@ -2690,7 +2708,7 @@ background-color: #ffc700;
   color: #af4fff;
 }
 
-.control-mark:active, 
+.control-mark:active,
 .control-mark-radio:active {
   border-color: rgb(0, 0, 0, 0.2);
 }
