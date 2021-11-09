@@ -894,12 +894,17 @@ border-radius: 5px;
   outline: 5px solid #af4fff;
 }
 
-.choice-catalog-link:focus h3 {
+.choice-catalog-link-img:focus .choice-catalog-title {
   color: #af4fff;
 }
 
-.choice-catalog-link-img:active, .choice-catalog-link:active h3 {
+.choice-catalog-link-img:active {
   opacity: 30%;
+  outline: none;
+}
+
+.choice-catalog-link-img:active .choice-catalog-title {
+  color: rgb(0, 0, 0, 0.3);
 }
 
 /* == 3.1.5 Services Area ==*/
@@ -2276,7 +2281,7 @@ input[type=number]::-webkit-outer-spin-button {
   opacity: 60%;
 }
 
-.product-card-link:focus .product-card-image{
+.product-card-link:focus .product-card-image {
   outline: 5px solid #af4fff;
 }
 
@@ -2498,6 +2503,7 @@ background-color: #ffc700;
   border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
 .range-bar {
@@ -2681,56 +2687,48 @@ background-color: #ffc700;
   content: "";
 }
 
-.control-mark:hover,
-.control-mark-radio:hover {
+.control:hover .control-mark,
+.control:hover .control-mark-radio {
   border-color: rgb(0, 0, 0, 0.5);
 }
 
-.control-input[type="checkbox"]:checked + .control-mark:hover::before,
-.control-input[type="checkbox"]:checked + .control-mark:hover::after,
-.control-input[type="radio"]:checked + .control-mark-radio:hover::before {
-  background-color: rgb(0, 0, 0, 0.5) ;
-}
-
-.control-mark:hover+.control-label,
-.control-label:hover {
+.control:hover .control-label {
   color: rgb(0, 0, 0, 0.5);
 }
 
-.control-mark-radio:hover+.control-label,
-.control-label:hover {
-  color: rgb(0, 0, 0, 0.5);
+.control:hover .control-input[type="checkbox"]:checked + .control-mark::before,
+.control:hover .control-input[type="checkbox"]:checked + .control-mark::after,
+.control:hover .control-input[type="radio"]:checked + .control-mark-radio::before {
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
-.control-mark:focus,
-.control-mark-radio:focus {
+.control .control-input:focus ~ span{
   border-color: #af4fff;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark:focus::before,
-.control-input[type="checkbox"]:checked + .control-mark:focus::after,
-.control-input[type="radio"]:checked + .control-mark-radio:focus::before {
-  background-color: #af4fff ;
-}
-
-.control-label:focus {
+.control .control-input:focus ~ span{
   color: #af4fff;
 }
 
-.control-mark:active,
-.control-mark-radio:active {
+.control .control-input:focus[type="checkbox"]:checked + .control-mark::before,
+.control .control-input:focus[type="checkbox"]:checked + .control-mark::after,
+.control .control-input:focus[type="radio"]:checked + .control-mark-radio::before {
+  background-color: #af4fff;
+}
+
+.control:active .control-mark,
+.control:active .control-mark-radio {
   border-color: rgb(0, 0, 0, 0.2);
 }
 
-.control-mark:active+.control-label,
-.control-label:active {
+.control:active .control-label {
   color: rgb(0, 0, 0, 0.2);
 }
 
-.control-input[type="checkbox"]:checked + .control-mark:active::before,
-.control-input[type="checkbox"]:checked + .control-mark:active::after,
-.control-input[type="radio"]:checked + .control-mark-radio:active::before {
-  background-color: rgb(0, 0, 0, 0.2) ;
+.control:active .control-input[type="checkbox"]:checked + .control-mark::before,
+.control:active .control-input[type="checkbox"]:checked + .control-mark::after,
+.control:active .control-input[type="radio"]:checked + .control-mark-radio::before {
+  background-color: rgb(0, 0, 0, 0.2);
 }
 
 .catalog-filter-button {
