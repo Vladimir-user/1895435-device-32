@@ -63,6 +63,8 @@ body {
   line-height: 30px;
   background-color: #ffffff;
   color: #444444;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .main-content {
@@ -85,7 +87,6 @@ body {
 }
 
 .nav-brand-logo {
-  /*margin: 0 0 -35px 60px;*/
   padding: 18px 10px 10px 60px;
 }
 
@@ -211,7 +212,7 @@ body {
 }
 
 .navigation-list-item:nth-child(2) {
-  margin-right: 22px;
+  margin-right: 36px;
 }
 
 .navigation-list-link {
@@ -1165,7 +1166,7 @@ button.services-menu-link.current {
 .button.about-link {
   position: relative;
   padding: 10px 17px 10px 17px;
-  margin: 0;
+  margin: auto 0 0 0;
   max-width: max-content;
 }
 
@@ -1395,13 +1396,16 @@ button.services-menu-link.current {
 }
 
 .appointment-form-check{
+  display: flex;
+  justify-content: flex-end;
   position: relative;
+  width: 200px;
 }
 
 .appointment-mark {
   position: absolute;
-  top: 0;
-  left: -41px;
+  top: 3px;
+  right: 148px;
   width: 20px;
   height: 20px;
   border: 2px solid transparent;
@@ -1481,7 +1485,7 @@ button.services-menu-link.current {
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
-  margin: 113px 0 0 0;
+  margin: 125px 0 0 0;
   padding: 0;
 }
 
@@ -1496,10 +1500,11 @@ button.services-menu-link.current {
   width: 148px;
   height: 40px;
   text-decoration: none;
-  outline: 2px solid transparent;
+  border: 2px solid transparent;
   border-radius: 20px;
   position: relative;
   margin: 0 3px 0 3px;
+  outline: none;
 }
 
 .futer-services-item H2:hover {
@@ -1517,7 +1522,7 @@ button.services-menu-link.current {
 }
 
 .futer-services-link:focus {
-  outline-color: #af4fff;
+  border-color: #af4fff;
 }
 
 .futer-services-item H2:active,
@@ -1535,6 +1540,7 @@ button.services-menu-link.current {
   text-transform: uppercase;
   color: #ffffff;
   padding: 10px;
+  margin: 0;
 }
 
 /* == 4.2 Footer Social Info == */
@@ -1555,26 +1561,16 @@ button.services-menu-link.current {
 }
 
 .footer-social-button {
-  display: block;
+  display: table-cell;
   width: 40px;
   height: 40px;
   border: 5px solid #444444;
   border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
   outline: none;
+  text-align: center;
+  vertical-align: middle;
 }
-
-.footer-social-fb {
-  background: rgba(255, 255, 255, 0.3) url("../img/facebook_btn.svg") no-repeat center;
-}
-
-.footer-social-inst {
-  background: rgba(255, 255, 255, 0.3) url("../img/instagram_btn.svg") no-repeat center;
-}
-
-.footer-social-tw {
-  background: rgba(255, 255, 255, 0.3) url("../img/twitter_btn.svg") no-repeat center;
-}
-
 .footer-social-button:hover {
   background-color: #ffc700;
 }
@@ -1583,7 +1579,12 @@ button.services-menu-link.current {
   border-color: #af4fff;
 }
 
+.footer-social-button:focus path {
+  fill: #ffffff;
+}
+
 .footer-social-button:active {
+  fill: none;
   opacity: 60%;
 }
 
@@ -1591,8 +1592,10 @@ button.services-menu-link.current {
 
 .footer-phone {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-end;
+  width: 280px;
 }
 
 .phone-link {
@@ -2090,7 +2093,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .catalog-filter {
-  width: 270px;
+  width: 250px;
   position: relative;
   margin-top: 84px;
 }
@@ -2116,7 +2119,7 @@ input[type=number]::-webkit-outer-spin-button {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  margin-right: 170px;
+  margin-right: 155px;
 }
 
 /* == 5.3 Sorting Area == */

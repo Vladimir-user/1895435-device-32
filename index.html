@@ -12,7 +12,7 @@
 
   <!-- Favicon -->
 
-  <link rel="icon" href="#">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
   <!-- Core Stylesheet -->
 
@@ -129,7 +129,7 @@
       <!-- Nav Menu -->
       <div class="navigation-menu-container">
         <div class="navigation-menu-products">
-          <a class="navigation-menu-link catalog" href="#menu-catalog">Каталог товаров</a>
+          <a class="navigation-menu-link catalog" href="catalog.html#menu-catalog">Каталог товаров</a>
           <button class="button-catalog" type="button"></button>
           <span class="visually-hidden">Кнопка развернуть Каталог</span>
           <div class="popover-menu-catalog" id="menu-catalog">
@@ -303,7 +303,7 @@
         <li class="choice-catalog-item">
           <a class="choice-catalog-link-img bracelet" href="#">
             <span class="visually-hidden">Раздел фитнес-браслеты</span>
-          <h3 class="choice-catalog-title">Фитнес&hybull;браслеты</h3>
+            <h3 class="choice-catalog-title">Фитнес&hybull;браслеты</h3>
           </a>
         </li>
         <li class="choice-catalog-item">
@@ -468,16 +468,16 @@
         </div>
 
         <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="POST">
-          <p>
+          <p class="appointment-form-field">
             <input class="appointment-form-email" type="text" name="email" placeholder="Ваш e-mail" required>
             <button class="appointment-form-button" type="submit">Подписаться</button>
             <span class="visually-hidden">Кнопка подписаться</span>
           </p>
-          <p>
+          <p class="appointment-form-chek">
             <label class="appointment-form-check">
               <input class="appointment-check visually-hidden" type="checkbox" name="check" checked>
               <span class="appointment-mark"></span>
-              <span>Это бесплатно</span>
+              <span class="appointment-mark-label">Это бесплатно</span>
             </label>
           </p>
         </form>
@@ -532,18 +532,34 @@
           <li class="footer-social-item">
             <a class="footer-social-button footer-social-fb" href="https://www.facebook.com/htmlacademy"
               target="_blank">
+              <svg class="footer-social-image" aria-hidden="true" focusable="false" width="9" height="18"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3z"
+                  fill="#444" />
+              </svg>
               <span class="visually-hidden">Кнопка Фэйсбук</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-button footer-social-inst" href="https://www.instagram.com/htmlacademy"
               target="_blank">
+              <svg class="footer-social-image" aria-hidden="true" focusable="false" width="16" height="16"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.7 1.3c-.9-.9-2-1.3-3.4-1.3H4.7C1.9 0 0 1.9 0 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3.8-.9 1.3-2 1.3-3.4V4.7c0-1.4-.4-2.6-1.3-3.4zM8 12.1c-2.2 0-4.1-1.8-4.1-4.1S5.8 3.9 8 3.9c2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3z"
+                  fill="#444" />
+              </svg>
               <span class="visually-hidden">Кнопка Инстаграм</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-button footer-social-tw" href="https://twitter.com/htmlacademy_ru" target="_blank">
-              <span class="visually-hidden">Кнопка Твиттер</span>
+              <svg class="footer-social-image" aria-hidden="true" focusable="false" width="15" height="14"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.7.1c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4C4 14 .6 13.6 0 12.2c2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2C1.5 7.7.3 7 .4 5c.3.3.9.5 1.2.4C1 5.2-.2 2.3.8.8c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2z"
+                  fill="#444" />
+                <span class="visually-hidden">Кнопка Твиттер</span>
             </a>
           </li>
         </ul>
