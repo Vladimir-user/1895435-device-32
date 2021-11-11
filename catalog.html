@@ -40,7 +40,7 @@
     <nav class="navigation">
       <div class="navigation-list-container">
         <!-- Search Form -->
-        <form class="search-form" action="#" method="get">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
           <img class="search-form-button" src="img/search_img.svg" width="16" height="16" alt="Кнопка Поиск">
           <input class="form-control" type="search" name="search" placeholder="Поиск по сайту" required>
           <button class="button-search" type="submit">Найти</button>
@@ -156,7 +156,7 @@
         </div>
         <ul class="navigation-menu-list">
           <li class="navigation-menu-item">
-            <a class="navigation-menu-link service" href="#">
+            <a class="navigation-menu-link service" href="#modal-container">
               <span>Доставка</span>
             </a>
           </li>
@@ -490,7 +490,7 @@
       <section class="foter-services">
         <ul class="futer-services-list">
           <li class="futer-services-item">
-            <a class="futer-services-link" href="#">
+            <a class="futer-services-link" href="#modal-container">
               <h2>Доставка</h2>
             </a>
           </li>
@@ -565,6 +565,64 @@
     </footer>
   </div>
   <!-- #### Footer Area End #### -->
+  <div class="modal-container" id="modal-container">
+    <div class="modal modal-auth">
+      <section class="modal-content">
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <form action="index.html" method="GET">
+          <button class="modal-close-button" type="submit">
+            <span class="visually-hidden">Закрыть</span>
+        </form>
+        </button>
+      </section>
+
+      <form class="order-form" action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="field-group order-form-name">
+          <label class="form-label" for="order-name">
+            Ваше имя:
+          </label>
+          <input class="field name" type="text" id="order-name" name="order-name" placeholder="Имя Фамилия" required>
+          <span class="field-subtitle red">Пожалуйста, предствьтесь</span>
+        </div>
+        <div class="field-group order-form-email">
+          <label class="form-label" for="order-email">
+            Ваш e-mail:
+          </label>
+          <input class="field email" type="text" id="order-email" name="order-email" placeholder="krasotka92@mail.ru"
+            required>
+          <span class="field-subtitle">Забавный у вас адрес</span>
+        </div>
+        <div class="field-group order-form-what">
+          <label class="form-label" for="order-what">
+            Что нужно привезти:
+          </label>
+          <input class="field what" type="text" id="order-what" name="order-what" placeholder="В свободной форме"
+            required>
+        </div>
+        <div class="field-group order-form-quantity">
+          <label class="form-label" for="order-quantity">
+            Количество:
+          </label>
+          <button class="botton-info" type="button">i</button>
+          <span class="visually-hidden">Кнопка информация</span>
+          <div class="quantity-block">
+            <button class="btn-quantity minus" type="button"></button>
+            <span class="visually-hidden">Кнопка минус</span>
+            <input class="quantity" type="number" id="order-quantity" name="order-quantity" value="1">
+            <button class="btn-quantity plus" type="button"></button>
+            <span class="visually-hidden">Кнопка плюс</span>
+          </div>
+        </div>
+        <button class="button-order-submit" type="submit">Отправить</button>
+        <span class="visually-hidden">Кнопка отправить</span>
+        <div class="popover popover-info visually-hidden">
+          <p class="popover-info-text">
+            Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br>к провозу багажа.
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
 
 </body>
 

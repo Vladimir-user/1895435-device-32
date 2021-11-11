@@ -40,7 +40,7 @@
     <nav class="navigation">
       <div class="navigation-list-container">
         <!-- Search Form -->
-        <form class="search-form" action="#" method="get">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
           <img class="search-form-button" src="img/search_img.svg" width="16" height="16" alt="Кнопка Поиск">
           <input class="form-control" type="search" name="search" placeholder="Поиск по сайту" required>
           <button class="button-search" type="submit">Найти</button>
@@ -151,7 +151,7 @@
         </div>
         <ul class="navigation-menu-list">
           <li class="navigation-menu-item">
-            <a class="navigation-menu-link service" href="#">
+            <a class="navigation-menu-link service" href="#modal-container">
               <span>Доставка</span>
             </a>
           </li>
@@ -341,7 +341,6 @@
           </li>
         </ol>
         <img class="line-service" src="img/line-service.svg" width="7" height="319" alt="Вертикальная линия">
-
         <ol class="services-list">
           <li class="services-list-item">
             <h3 class="services-list-title">Доставка</h3>
@@ -355,34 +354,67 @@
         </ol>
         <img class="services-list-item-image" src="img/delivery.svg" width="136" height="164" alt="Доставим ваш товар">
 
-        <ol class="services-list visually-hidden">
-          <li class="services-list-item">
-            <h3 class="services-list-title">Гарантия</h3>
-          </li>
-          <li class="services-list-item">
-            <p class="services-list-description">Если из-за возгорания купленного у нас товара у вас
-              сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.
-            </p>
-          </li>
-        </ol>
-        <img class="services-list-item-image visually-hidden" src="img/warranty.svg" width="171" height="195"
-          alt="Гарантия на купленный товар">
+        <div class="visually-hidden">
+          <ol class="services-menu">
+            <li class="services-menu-item">
+              <button class="button services-menu-link" type="button">Доставка</button>
+              <span class="visually-hidden">Кнопка доставка</span>
+            </li>
+            <li class="services-menu-item">
+              <button class="button services-menu-link current" type="button">Гарантия</button>
+              <span class="visually-hidden">Кнопка гарантия</span>
+            </li>
+            <li class="services-menu-item">
+              <button class="button services-menu-link" type="button">Кредит</button>
+              <span class="visually-hidden">Кнопка кредит</span>
+            </li>
+          </ol>
+          <img class="line-service" src="img/line-service.svg" width="7" height="319" alt="Вертикальная линия">
+          <ol class="services-list">
+            <li class="services-list-item">
+              <h3 class="services-list-title">Гарантия</h3>
+            </li>
+            <li class="services-list-item">
+              <p class="services-list-description">Если из-за возгорания купленного у нас товара у вас<br>
+                сгорит дом — не переживайте, мы выдадим вам новый.<br>
+                Товар, не дом, конечно же.
+              </p>
+            </li>
+          </ol>
+          <img class="services-list-item-image" src="img/warranty.svg" width="171" height="195"
+            alt="Гарантия на купленный товар">
+        </div>
 
-        <ol class="services-list visually-hidden">
-          <li class="services-list-item">
-            <h3 class="services-list-title">Кредит</h3>
-          </li>
-          <li class="services-list-item">
-            <p class="services-list-description">Залезть в долговую яму стало проще! Кредитные
-              консультанты подберут для вас наиболее выгодные
-              условия кредита. Выгодные для банка, разумеется.
-            </p>
-          </li>
-        </ol>
-        <img class="services-list-item-image visually-hidden" src="img/credit.svg" width="156" height="188"
-          alt="Предоставление кредита">
-
+        <div class="visually-hidden">
+          <ol class="services-menu">
+            <li class="services-menu-item">
+              <button class="button services-menu-link" type="button">Доставка</button>
+              <span class="visually-hidden">Кнопка доставка</span>
+            </li>
+            <li class="services-menu-item">
+              <button class="button services-menu-link" type="button">Гарантия</button>
+              <span class="visually-hidden">Кнопка гарантия</span>
+            </li>
+            <li class="services-menu-item">
+              <button class="button services-menu-link current" type="button">Кредит</button>
+              <span class="visually-hidden">Кнопка кредит</span>
+            </li>
+          </ol>
+          <img class="line-service" src="img/line-service.svg" width="7" height="319" alt="Вертикальная линия">
+          <ol class="services-list">
+            <li class="services-list-item">
+              <h3 class="services-list-title">Кредит</h3>
+            </li>
+            <li class="services-list-item">
+              <p class="services-list-description">Залезть в долговую яму стало проще! Кредитные<br>
+                консультанты подберут для вас наиболее выгодные<br>
+                условия кредита. Выгодные для банка, разумеется.
+              </p>
+            </li>
+          </ol>
+          <img class="services-list-item-image" src="img/credit.svg" width="156" height="188"
+            alt="Предоставление кредита">
+        </div>
       </section>
     </div>
 
@@ -390,7 +422,7 @@
     <!-- Offer Area -->
 
     <aside class="offer">
-      <a class="offer-link-block" href="#">
+      <a class="offer-link-block" href="#modal-container">
         <ol class="offer-list">
           <li class="offer-list-item">
             <span class="visually-hidden">Иконка доставим заказ</span>
@@ -510,7 +542,7 @@
       <section class="foter-services">
         <ul class="futer-services-list">
           <li class="futer-services-item">
-            <a class="futer-services-link" href="#">
+            <a class="futer-services-link" href="#modal-container">
               <h2>Доставка</h2>
             </a>
           </li>
@@ -586,12 +618,14 @@
   </div>
   <!-- #### Footer Area End #### -->
 
-  <div class="modal-container visually-hidden">
+  <div class="modal-container" id="modal-container">
     <div class="modal modal-auth">
       <section class="modal-content">
         <h2 class="modal-title">Доставка под заказ</h2>
-        <button class="modal-close-button" type="button">
-          <span class="visually-hidden">Закрыть</span>
+        <form action="index.html" method="GET">
+          <button class="modal-close-button" type="submit">
+            <span class="visually-hidden">Закрыть</span>
+        </form>
         </button>
       </section>
 
@@ -622,7 +656,7 @@
           <label class="form-label" for="order-quantity">
             Количество:
           </label>
-          <button class="botton-info" type="button">i</button>
+          <button class="button-info" type="button">i</button>
           <span class="visually-hidden">Кнопка информация</span>
           <div class="quantity-block">
             <button class="btn-quantity minus" type="button"></button>
@@ -634,7 +668,7 @@
         </div>
         <button class="button-order-submit" type="submit">Отправить</button>
         <span class="visually-hidden">Кнопка отправить</span>
-        <div class="popover popover-info visually-hidden">
+        <div class="popover popover-info" id="popover-info">
           <p class="popover-info-text">
             Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br>к провозу багажа.
           </p>
