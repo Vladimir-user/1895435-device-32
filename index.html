@@ -658,21 +658,18 @@
           </label>
           <button class="button-info" type="button">i</button>
           <span class="visually-hidden">Кнопка информация</span>
-          <div class="quantity-block">
+          <form class="form-quantity-block" action="#">
+            <div class="quantity-block">
             <button class="btn-quantity minus" type="button"></button>
             <span class="visually-hidden">Кнопка минус</span>
             <input class="quantity" type="number" id="order-quantity" name="order-quantity" value="1">
             <button class="btn-quantity plus" type="button"></button>
             <span class="visually-hidden">Кнопка плюс</span>
-          </div>
+            </div>
+          </form>
         </div>
         <button class="button-order-submit" type="submit">Отправить</button>
         <span class="visually-hidden">Кнопка отправить</span>
-        <div class="popover popover-info" id="popover-info">
-          <p class="popover-info-text">
-            Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br>к провозу багажа.
-          </p>
-        </div>
       </form>
     </div>
   </div>
