@@ -194,6 +194,7 @@
         </svg>
         <span class="visually-hidden">Следующий товар</span>
       </a>
+
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <img class="slider-pagination-img slider-pagination-img-current" src="img/quadrocopter.png" width="560"
@@ -224,7 +225,6 @@
               </li>
             </ol>
           </div>
-
           <ul class="slider-property">
             <li class="slider-property-item">
               <p class="slider-property-term">800 м</p>
@@ -241,39 +241,86 @@
       <ol class="slider-pagination visually-hidden">
         <li class="slider-pagination-item">
           <img class="slider-pagination-img" src="img/bracelet.png" width="560" height="560" alt="Фитнес-браслет">
-          <span class="slider-number">02</span>
+        </li>
+        <li class="slider-pagination-item">
           <p class="slider-slogan">Худеем правильно!</p>
           <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
             соблюдать диету.</p>
-          <button class="button slider-link" type="button">Подробнее</button>
-          <span class="visually-hidden">Кнопка подробнее</span>
-          <dl class="slider-property">
-            <dt class="slider-property-term">48 часов</dt>
-            <dd class="slider-property-description">Без подзарядки</dd>
-          </dl>
+          <div class="slider-pagination-container">
+            <button class="button slider-link" type="button">Подробнее</button>
+            <span class="visually-hidden">Кнопка подробнее</span>
+            <ol class="slider-pagination-dicks">
+              <li class="slider-pagination-dicks-item">
+                <button class="pagination-dick" type="button">
+                  <span class="visually-hidden">Слайд 1</span>
+                </button>
+              </li>
+              <li class="slider-pagination-dicks-item">
+                <button class="pagination-dick active" type="button">
+                  <span class="visually-hidden">Слайд 2</span>
+                </button>
+              </li>
+              <li class="slider-pagination-dicks-item">
+                <button class="pagination-dick" type="button">
+                  <span class="visually-hidden">Слайд 3</span>
+                </button>
+              </li>
+            </ol>
+          </div>
+          <ul class="slider-property">
+            <li class="slider-property-item">
+              <p class="slider-property-term">48 часов</p>
+              <p class="slider-property-description">Без подзарядки</p>
+            </li>
+          </ul>
         </li>
       </ol>
 
       <ol class="slider-pagination visually-hidden">
-        <li class="slider-pagination-item visually-hidden">
+        <li class="slider-pagination-item">
           <img class="slider-pagination-img" src="img/stick.png" width="560" height="560" alt="Монопод для селфи">
-          <span class="slider-number">03</span>
+        </li>
+        <li class="slider-pagination-item">
           <p class="slider-slogan">Делай селфи, как Бен Стиллер!</p>
           <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
             длиной и весом всего 5 кг.</p>
-          <button class="button slider-link" type="button">Подробнее</button>
-          <span class="visually-hidden">Кнопка подробнее</span>
-          <dl class="slider-property">
-            <dt class="slider-property-term">8,5 м</dt>
-            <dd class="slider-property-description">Длина палки</dd>
-            <dt class="slider-property-term">5 кг</dt>
-            <dd class="slider-property-description">Вес палки</dd>
-            <dt class="slider-property-term">Карбон</dt>
-            <dd class="slider-property-description">Материал</dd>
-          </dl>
+          <div class="slider-pagination-container">
+            <button class="button slider-link" type="button">Подробнее</button>
+            <span class="visually-hidden">Кнопка подробнее</span>
+            <ol class="slider-pagination-dicks">
+              <li class="slider-pagination-dicks-item">
+                <button class="pagination-dick" type="button">
+                  <span class="visually-hidden">Слайд 1</span>
+                </button>
+              </li>
+              <li class="slider-pagination-dicks-item">
+                <button class="pagination-dick" type="button">
+                  <span class="visually-hidden">Слайд 2</span>
+                </button>
+              </li>
+              <li class="slider-pagination-dicks-item">
+                <button class="pagination-dick  active" type="button">
+                  <span class="visually-hidden">Слайд 3</span>
+                </button>
+              </li>
+            </ol>
+          </div>
+          <ul class="slider-property">
+            <li class="slider-property-item">
+              <p class="slider-property-term">8,5 м</p>
+              <p class="slider-property-description">Длина палки</p>
+            </li>
+            <li class="slider-property-item">
+              <p class="slider-property-term">5 кг</p>
+              <p class="slider-property-description">Вес палки</p>
+            </li>
+            <li class="slider-property-item">
+              <p class="slider-property-term">Карбон</p>
+              <p class="slider-property-description">Материал</p>
+            </li>
+          </ul>
         </li>
       </ol>
-
     </section>
 
     <!-- Choice Area -->
@@ -623,8 +670,8 @@
       <section class="modal-content">
         <h2 class="modal-title">Доставка под заказ</h2>
         <form action="index.html" method="GET">
-          <button class="modal-close-button" type="submit">
-            <span class="visually-hidden">Закрыть</span>
+          <button class="modal-close-button" type="submit"></button>
+          <span class="visually-hidden">Закрыть</span>
         </form>
         </button>
       </section>
@@ -658,15 +705,14 @@
           </label>
           <button class="button-info" type="button">i</button>
           <span class="visually-hidden">Кнопка информация</span>
-          <form class="form-quantity-block" action="#">
-            <div class="quantity-block">
+          <div class="quantity-block">
             <button class="btn-quantity minus" type="button"></button>
             <span class="visually-hidden">Кнопка минус</span>
             <input class="quantity" type="number" id="order-quantity" name="order-quantity" value="1">
             <button class="btn-quantity plus" type="button"></button>
             <span class="visually-hidden">Кнопка плюс</span>
-            </div>
-          </form>
+          </div>
+
         </div>
         <button class="button-order-submit" type="submit">Отправить</button>
         <span class="visually-hidden">Кнопка отправить</span>
