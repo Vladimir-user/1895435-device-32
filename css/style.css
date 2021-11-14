@@ -211,7 +211,7 @@ body {
 }
 
 .navigation-list-item.compare {
-    margin-right: 24px;
+    margin-right: 19px;
 }
 
 .navigation-list-link {
@@ -229,6 +229,7 @@ body {
 
 .exit {
   color: rgb(0, 0, 0, 0.3);
+  margin-right: 10px;
 }
 
 .navigation-list-link:hover {
@@ -335,6 +336,7 @@ body {
 }
 
 .popover-cart-btn-close {
+  display: block;
   width: 25px;
   height: 25px;
   border: 2px solid transparent;
@@ -349,9 +351,9 @@ body {
 .popover-cart-btn-close::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 11px;
   right: 5px;
-  width: 12px;
+  width: 14px;
   height: 2px;
   background-color: #ffffff;
   transform: rotate(45deg);
@@ -360,9 +362,9 @@ body {
 .popover-cart-btn-close::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 11px;
   right: 5px;
-  width: 12px;
+  width: 14px;
   height: 2px;
   background-color: #ffffff;
   transform: rotate(-45deg);
@@ -507,10 +509,6 @@ body {
   position: relative;
 }
 
-.navigation-menu-link.catalog:active {
-  color: rgb(0, 0, 0, 0.3);
-}
-
 .navigation-menu-link.service:hover::after {
   content: "";
   display: block;
@@ -532,14 +530,39 @@ body {
 }
 
 .button-catalog {
-  width: 50px;
-  height: 50px;
-  border-color: rgb(0, 0, 0);
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 50%;
   background: #ffe17f url("../img/plus_btn.svg") no-repeat center;
   opacity: 20%;
   cursor: pointer;
   outline: none;
+}
+
+.button-catalog:hover {
+  background: #ffe17e url("../img/minus_btn.svg") no-repeat center;
+  opacity: 100%;
+}
+
+.button-catalog:hover ~ .popover-menu-catalog {
+  display: block;
+}
+
+.button-catalog:focus ~ .popover-menu-catalog {
+  display: block;
+}
+
+.navigation-menu-links {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-menu-links:active > a {
+  opacity: 20%;
+  box-shadow: none;
 }
 
 .navigation-menu-link.catalog:hover ~ .button-catalog {
@@ -695,11 +718,11 @@ body {
   font-weight: 800;
   line-height: 50px;
   color: #000000;
-  margin: 25px 0 27px 0;
+  margin: 25px 0 28px 0;
 }
 
 .slider-text {
-  margin: 0 0 40px 0;
+  margin: 0 0 36px 0;
 }
 
 .slider-pagination-container {
@@ -707,6 +730,7 @@ body {
   flex-direction: row;
   align-items: center;
   position: relative;
+  margin-left: 2px;
 }
 
 .pagination-dick {
@@ -805,7 +829,7 @@ body {
 
 .slider-property {
   display: flex;
-  margin: 60px 0 0 0;
+  margin: 54px 0 0 0;
   padding: 0;
   list-style-type: none;
 }
@@ -920,7 +944,7 @@ body {
 /* == 3.1.5 Services Area ==*/
 
 .gray-color {
-  width: 100%;
+  min-width: 1160px;
   display: block;
   min-height: 288px;
   margin: 155px auto 80px auto;
@@ -1117,6 +1141,7 @@ button.services-menu-link.current {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  margin: 18px 0 17px 2px;
 }
 
 /* == 3.1.7 About, Contacts Area ==*/
@@ -1146,7 +1171,7 @@ button.services-menu-link.current {
 
 .about-list {
   margin: 30px 0 58px 0;
-  padding-left: 23px;
+  padding-left: 25px;
   list-style-type: none;
 }
 
@@ -1174,9 +1199,14 @@ button.services-menu-link.current {
   position: absolute;
 }
 
+.about-item-link:focus {
+  outline: 2px solid #af4fff;
+  border-radius: 20px;
+}
+
 .button.about-link {
   position: relative;
-  padding: 10px 17px 10px 17px;
+  padding: 10px 17px 10px 18px;
   margin: auto 0 0 0;
   max-width: max-content;
 }
@@ -1197,7 +1227,7 @@ button.services-menu-link.current {
   flex-direction: column;
   width: 580px;
   margin: 0;
-  padding: 0 0 0 38px;
+  padding: 0 0 0 40px;
 }
 
 .contacts-tilte {
@@ -1238,6 +1268,11 @@ button.services-menu-link.current {
   color: #444444;
 }
 
+.contacts-address-phone:focus {
+  outline: 2px solid #af4fff;
+  border-radius: 10px;
+}
+
 .contacts-schedule {
   list-style-type: none;
   padding: 0;
@@ -1246,7 +1281,7 @@ button.services-menu-link.current {
 
 .contacts-link {
   position: relative;
-  padding: 10px 32px 10px 32px;
+  padding: 10px 32px 10px 34px;
   margin: auto 0 0 0;
   max-width: max-content;
 }
@@ -1289,10 +1324,10 @@ button.services-menu-link.current {
 /* == 3.1.8 Appointment Area == */
 
 .appointment-container {
-  width: 100%;
+  min-width: 1160px;
   background-color: #f0f0f0;
   margin: 0 auto;
-  padding-bottom: 150px;
+  padding-bottom: 115px;
 }
 
 .appointment {
@@ -1322,7 +1357,7 @@ button.services-menu-link.current {
 }
 
 .appointment-text {
-  margin: 87px 0 0 28px;
+  margin: 87px 0 0 30px;
 }
 
 .appointment-form {
@@ -1330,7 +1365,7 @@ button.services-menu-link.current {
   align-items: center;
   width: 1160px;
   justify-content: space-between;
-  margin: 43px 0 0 0;
+  margin: 43px 0 0 2px;
   padding: 0;
 }
 
@@ -1341,7 +1376,7 @@ button.services-menu-link.current {
   border: 0;
   border-bottom: 3px solid rgb(0, 0, 0, 0.1);
   box-sizing: border-box;
-  padding-top: 7px;
+  padding: 7px 0 0 0;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
@@ -1450,7 +1485,7 @@ button.services-menu-link.current {
 /* == 4.0 Footer Area == */
 
 .footer-container {
-  width: 100%;
+  min-width: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: #444444;
@@ -1476,6 +1511,7 @@ button.services-menu-link.current {
   padding: 10px;
   padding-left: 0;
   margin-top: 52px;
+  outline: none;
 }
 
 .footer-address-title {
@@ -1496,7 +1532,7 @@ button.services-menu-link.current {
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
-  margin: 125px 0 0 0;
+  margin: 124px 0 0 0;
   padding: 0;
 }
 
@@ -1508,7 +1544,7 @@ button.services-menu-link.current {
 
 .futer-services-link {
   display: block;
-  width: 148px;
+  width: 145px;
   min-height: 40px;
   text-decoration: none;
   border: 2px solid transparent;
@@ -1522,13 +1558,33 @@ button.services-menu-link.current {
   color: #ffc700;
 }
 
-.futer-services-link:hover::after {
+.futer-services-link.delivery:hover::after {
   content: "";
   display: block;
   position: absolute;
-  left: 18px;
+  left: 10px;
   bottom: 5px;
-  width: 76%;
+  width: 85%;
+  border-bottom: 2px solid #ffc700;
+}
+
+.futer-services-link.warranty:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 12px;
+  bottom: 5px;
+  width: 81%;
+  border-bottom: 2px solid #ffc700;
+}
+
+.futer-services-link.contact:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  width: 86%;
   border-bottom: 2px solid #ffc700;
 }
 
@@ -1560,7 +1616,7 @@ button.services-menu-link.current {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 48px 0 0 0;
+  margin: 44px 0 0 0;
   padding: 0;
   list-style-type: none;
 }
@@ -1568,7 +1624,7 @@ button.services-menu-link.current {
 .footer-social-item {
   width: 50px;
   height: 50px;
-  margin: 0;
+  margin: 2px;
 }
 
 .footer-social-button {
@@ -1618,7 +1674,7 @@ button.services-menu-link.current {
   display: block;
   padding: 5px 12px 5px 12px;
   margin-top: 131px;
-  margin-right: -10px;
+  margin-right: -14px;
   border: 2px solid transparent;
   border-radius: 20px;
   outline: none;
@@ -2232,7 +2288,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .sorting-type-form {
   width: 200px;
-  margin: -2px 300px 0 44px;
+  margin: -2px 300px 0 46px;
 }
 
 .arrow-container {
@@ -2247,6 +2303,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 40px;
   padding: 0;
   margin: 0;
+  background-color: #ebebeb;
   text-decoration: none;
   box-sizing: border-box;
   text-align: center;
@@ -2303,7 +2360,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .product-card {
   display: grid;
-  grid-template-columns: 250px 110px;
+  grid-template-columns: 270px 90px;
   grid-template-rows: 380px minmax(50px, 1fr);
   row-gap: 32px;
   margin: 0;
@@ -2315,8 +2372,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .baner-new::before {
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 57px;
+  height: 57px;
   position: absolute;
   top: 27px;
   right: 27px;
@@ -2359,12 +2416,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .button-product {
   position: absolute;
-  width: 180px;
-  min-height: 40px;
-  top: 40%;
-  transform: translateY(-50%);
+  display: block;
+  width: 160px;
+  min-height: 20px;
+  top: 34%;
   left: 50%;
   transform: translateX(-50%);
+  text-align: center;
+  padding: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -2377,7 +2436,7 @@ input[type=number]::-webkit-outer-spin-button {
 .button-product::before {
   content: "";
   position: absolute;
-  top: 42%;
+  top: 16px;
   left: 0;
   width: 180px;
   height: 8px;
@@ -2386,11 +2445,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .button-product:hover {
-background-color: #ffc700;
+  background-color: #ffc700;
 }
 
 .button-product:active {
-  color: rgb(0, 0, 0, 0.6);
+  color: rgb(0, 0, 0, 0.3);
 }
 
 
@@ -2402,7 +2461,7 @@ background-color: #ffc700;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   color: #000000;
   margin: 0;
 }
@@ -2478,7 +2537,7 @@ background-color: #ffc700;
 
 .pagination {
   display: grid;
-  width: 506px;
+  width: 466px;
   grid-template-columns: repeat(auto-fit, 38px);
   grid-template-rows: 70px;
   justify-content: center;
@@ -2486,6 +2545,7 @@ background-color: #ffc700;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-left: 40px;
 }
 
 .pagination-button {
@@ -2523,7 +2583,7 @@ background-color: #ffc700;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  width: 127px;
+  width: 138px;
   min-height: 70px;
   background-color: #ebebeb;
   border: 5px solid #ebebeb;
@@ -2582,7 +2642,7 @@ background-color: #ffc700;
 
 .toggle-max {
   top: -9px;
-  left: 120px;
+  left: 92px;
 }
 
 .range-toggle:focus {
@@ -2606,7 +2666,7 @@ background-color: #ffc700;
 }
 
 .catalog-filter-input {
-  width: 100px;
+  width: 70px;
   background-color: transparent;
   border: none;
   font: inherit;
@@ -2655,6 +2715,7 @@ background-color: #ffc700;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+  padding: 0;
   z-index: 2;
 }
 
@@ -2667,7 +2728,7 @@ background-color: #ffc700;
 }
 
 .catalog-filter-list.color {
-  margin: 27px 0 38px 0;
+  margin: 28px 0 38px 0;
 }
 
 .catalog-filter-list.bluetooth {
@@ -2687,10 +2748,10 @@ background-color: #ffc700;
 
 .control-mark {
   position: absolute;
-  top: -2px;
+  top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #242424;
   border-radius: 3px;
   cursor: pointer;
@@ -2698,10 +2759,10 @@ background-color: #ffc700;
 
 .control-mark-radio {
   position: absolute;
-  top: -2px;
+  top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #242424;
   border-radius: 50%;
   cursor: pointer;
@@ -2713,20 +2774,20 @@ background-color: #ffc700;
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  top: 11px;
+  top: 8px;
   left: 2px;
-  width: 8.2px;
-  height: 3px;
+  width: 7.2px;
+  height: 2px;
   background-color: #000000;
   content: "";
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
-  top: 8px;
+  top: 6px;
   left: 7px;
-  width: 12px;
-  height: 3px;
+  width: 9px;
+  height: 2px;
   background-color: #000000;
   content: "";
 }
@@ -2741,8 +2802,8 @@ background-color: #ffc700;
 
 .control-input[type="radio"]:checked + .control-mark-radio::before {
   position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 4px;
+  left: 4px;
   width: 8px;
   height: 8px;
   background-color: #000000;
@@ -2795,7 +2856,7 @@ background-color: #ffc700;
 }
 
 .catalog-filter-button {
-  width: 180px;
+  width: 200px;
   min-height: 40px;
   border: none;
   background-color: transparent;
@@ -2806,7 +2867,7 @@ background-color: #ffc700;
 
 .catalog-filter-button::before {
   content: "";
-  width: 180px;
+  width: 200px;
   height: 8px;
   background: #ffe17e;
   position: absolute;
