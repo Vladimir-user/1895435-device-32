@@ -829,6 +829,7 @@ body {
 
 .slider-property {
   display: flex;
+  flex-wrap: wrap;
   margin: 54px 0 0 0;
   padding: 0;
   list-style-type: none;
@@ -1120,7 +1121,7 @@ button.services-menu-link.current {
   background: transparent url("../img/info_btn.svg") no-repeat center;
 }
 
-.offer-list-item:nth-child(1):hover {
+.offer-link-block:hover .offer-list-item:nth-child(1) {
   background-color: #ffc700;
 }
 
@@ -1545,16 +1546,18 @@ button.services-menu-link.current {
 .futer-services-link {
   display: block;
   width: 145px;
-  min-height: 40px;
+  min-height: 30px;
+  color: #ffffff;
   text-decoration: none;
   border: 2px solid transparent;
   border-radius: 20px;
   position: relative;
   margin: 0 3px 0 3px;
+  padding-top: 10px;
   outline: none;
 }
 
-.futer-services-item h2:hover {
+.futer-services-link:hover {
   color: #ffc700;
 }
 
@@ -1592,12 +1595,12 @@ button.services-menu-link.current {
   border-color: #af4fff;
 }
 
-.futer-services-item h2:active,
+.futer-services-link:active,
 .futer-services-link:active::after {
   opacity: 30%;
 }
 
-.futer-services-item h2 {
+.futer-services-item {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1605,7 +1608,6 @@ button.services-menu-link.current {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #ffffff;
   padding: 10px;
   margin: 0;
 }
@@ -1739,8 +1741,8 @@ button.services-menu-link.current {
     display: flex;
     flex-direction: column;
     width: 920px;
-    height: 580px;
-    padding: 0 80px 0 80px;
+    min-height: 580px;
+    padding: 0 68px 0 70px;
     background-color: #ffffff;
     border: 10px solid #000000;
     box-sizing: border-box;
@@ -1756,6 +1758,7 @@ button.services-menu-link.current {
   min-height: 60px;
   padding: 0;
   margin: 0;
+  margin-left: 2px;
 }
 
 .modal-title {
@@ -1765,7 +1768,7 @@ font-weight: 800;
 font-size: 50px;
 line-height: 50px;
 color: #000000;
-margin: 72px 0 48px 0;
+margin: 60px 0 54px 0;
 }
 
 .modal-close-button {
@@ -1782,10 +1785,10 @@ margin: 72px 0 48px 0;
 .modal-close-button::before {
   content: "";
   position: absolute;
-  top: 19px;
-  left: 7px;
-  width: 26px;
-  height: 3px;
+  top: 26px;
+  left: 15px;
+  width: 32px;
+  height: 4px;
   background-color: #000000;
   transform: rotate(45deg);
 }
@@ -1793,10 +1796,10 @@ margin: 72px 0 48px 0;
 .modal-close-button::after {
   content: "";
   position: absolute;
-  top: 19px;
-  left: 7px;
-  width: 26px;
-  height: 3px;
+  top: 26px;
+  left: 15px;
+  width: 32px;
+  height: 4px;
   background-color: #000000;
   transform: rotate(-45deg);
 }
@@ -1834,15 +1837,16 @@ margin: 72px 0 48px 0;
 }
 
 .field {
-  height: 60px;
+  height: 58px;
   background-color: #f0f0f0;
   font-size: 16px;
   line-height: 20px;
   border: 5px solid transparent;
   box-sizing: border-box;
-  margin-top: 5px;
+  margin: 0;
   outline: 0;
   outline-offset: 0;
+  padding: 0 30px 0 10px;
 }
 
 .field:-webkit-autofill,
@@ -1879,7 +1883,7 @@ margin: 72px 0 48px 0;
   font-size: 16px;
   line-height: 20px;
   color: rgb(0, 0, 0, 0.6);
-  padding-left: 20px;
+  padding-left: 3px;
 }
 
 .field-subtitle {
@@ -1894,26 +1898,30 @@ margin: 72px 0 48px 0;
 
 .order-form-name,
 .name {
-  width: 350px;
-  padding: 0;
+  width: 360px;
+  margin: 10px 0 0 2px;
 }
 
 .order-form-email,
 .email {
   width: 360px;
-  padding: 0;
+  margin: 10px 0 0 0;
 }
 
-.order-form-what,
-.what {
+.order-form-what {
   width: 560px;
-  padding: 0;
+  margin-top: 6px;
+}
+
+.what {
+  width: 100%;
+  margin-top: 10px;
 }
 
 .order-form-quantity {
   width: 160px;
-  padding: 0;
   position: relative;
+  margin-top: 6px;
 }
 
 .button-order-submit {
@@ -1923,13 +1931,13 @@ margin: 72px 0 48px 0;
   letter-spacing: 0.2em;
   color: #000000;
   text-transform: uppercase;
-  width: 200px;
+  width: 204px;
   height: 40px;
   border: none;
   background-color: transparent;
   position: relative;
   cursor: pointer;
-  margin-top: 54px;
+  margin-top: 46px;
   z-index: 0;
   outline: none;
   box-shadow: none;
@@ -1938,7 +1946,7 @@ margin: 72px 0 48px 0;
 .button-order-submit::before {
   content: "";
   position: absolute;
-  width: 200px;
+  width: 204px;
   height: 8px;
   top: 16px;
   left: 0;
@@ -1969,7 +1977,7 @@ margin: 72px 0 48px 0;
   background-color: #ffe17f;
   border: none;
   border-radius: 50%;
-  font-size: 19px;
+  font-size: 17px;
   margin-left: 5px;
   outline: none;
   box-shadow: none;
@@ -2007,13 +2015,13 @@ margin: 72px 0 48px 0;
 
 .quantity {
   width: 160px;
-  height: 60px;
+  height: 58px;
   background-color: #f0f0f0;
   font-size: 16px;
   line-height: 20px;
   border: 5px solid transparent;
   box-sizing: border-box;
-  margin-top: 5px;
+  margin-top: 10px;
   outline: 0;
   position: relative;
   text-align: center;
@@ -2038,12 +2046,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .btn-quantity.minus {
-  top: 48px;
+  top: 52px;
   left: 10px;
 }
 
 .btn-quantity.plus {
-  top: 48px;
+  top: 52px;
   left: 115px;
 }
 
