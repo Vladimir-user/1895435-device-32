@@ -350,6 +350,7 @@ body {
   background-color: transparent;
   outline: none;
   box-shadow: none;
+  margin: 0 0 17px 27px;
   cursor: pointer;
 }
 
