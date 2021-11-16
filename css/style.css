@@ -307,9 +307,8 @@ body {
 
 .popover-cart-list {
   display: grid;
-  grid-template-columns: 1px 51px 157px 51px;
+  grid-template-columns: 1px 208px 51px;
   column-gap: 16px;
-  justify-items: center;
   align-items: center;
   text-align: left;
   padding: 0;
@@ -318,29 +317,27 @@ body {
   position: relative;
 }
 
-.popover-cart-item-image {
+.popover-cart-link-image {
+  display: flex;
   grid-column: 2/3;
   width: 41px;
   height: 43px;
   border: 5px solid transparent;
+  text-decoration: none;
   outline: none;
 }
 
-.popover-cart-item-title {
-  padding-left: 2px;
-}
-
-.popover-cart-link {
+.popover-cart-link-title {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-decoration: none;
   margin-top: 3px;
   margin-bottom: 23px;
-  outline: none;
+  padding-left: 20px;
 }
 
-.popover-cart-btn-close {
+.popover-cart-link-button {
   display: block;
   width: 25px;
   height: 25px;
@@ -376,48 +373,24 @@ body {
   transform: rotate(-45deg);
 }
 
-.popover-cart-link:hover .popover-cart-image {
-  opacity: 60%;
-}
-
-.popover-cart-link:hover .popover-cart-item-title {
-  opacity: 60%;
-}
-
-.popover-cart-link:hover .popover-cart-btn-close::before {
-  opacity: 60%;
-}
-
-.popover-cart-link:hover .popover-cart-btn-close::after {
-  opacity: 60%;
-}
-
-
-.popover-cart-link:focus .popover-cart-item-image {
-  border-color: #af4fff;
-}
-
-.popover-cart-link:focus .popover-cart-item-title {
+.popover-cart-list a:focus,
+.popover-cart-list a:focus .popover-cart-link-title,
+.popover-cart-list a:focus ~ a {
   color: #af4fff;
-}
-
-.popover-cart-link:focus .popover-cart-btn-close {
   border-color: #af4fff;
 }
 
-.popover-cart-link:active .popover-cart-image {
-  opacity: 30%;
+.popover-cart-list:hover .popover-cart-image,
+.popover-cart-list:hover .popover-cart-link-title,
+.popover-cart-list:hover .popover-cart-btn-close::before,
+.popover-cart-list:hover .popover-cart-btn-close::after {
+  opacity: 60%;
 }
 
-.popover-cart-link:active .popover-cart-item-title {
-  opacity: 30%;
-}
-
-.popover-cart-link:active .popover-cart-btn-close::before {
-  opacity: 30%;
-}
-
-.popover-cart-link:active .popover-cart-btn-close::after {
+.popover-cart-list:active .popover-cart-image,
+.popover-cart-list:active .popover-cart-link-title,
+.popover-cart-list:active .popover-cart-btn-close::before,
+.popover-cart-list:active .popover-cart-btn-close::after {
   opacity: 30%;
 }
 
